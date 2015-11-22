@@ -6,179 +6,157 @@ $(document).ready(function(){
 
   //on load, show total as zero
   $(window).load(function() {
-    $('#total-display').html(function(){
+    $('#total-display').html(function() {
     return '<h2>'+total+'</h2>';
     })
   })
 
-  //if button1 is pressed, 1 is assigned to var a
+  //if button1 is pressed, 1 to var
   $('#button1').mousedown(function(){
-    //if toggle is even, value is assigned to a
+    //if toggle is even, value is assigned to var a
     if (toggle % 2 == 0) {
     a = a+"1";
-    //if toggle is odd, value is assigned to b
-  } else {
-    b = b+"1";
-  }
-    parseInt(a);
-    parseInt(b);
+    //if toggle is odd, value is assigned to var b
+    } else {
+      b = b+"1";
+    }
   })
 
-  $('#button2').mousedown(function(){
+  $('#button2').mousedown(function() {
     //if toggle is even, value is assigned to a
     if (toggle % 2 == 0) {
     a = a+"2";
     //if toggle is odd, value is assigned to b
-  } else {
-    b = b+"2";
-  }
-    parseInt(a);
-    parseInt(b);
+    } else {
+      b = b+"2";
+    }
   })
 
-  $('#button3').mousedown(function(){
+  $('#button3').mousedown(function() {
     //if toggle is even, value is assigned to a
     if (toggle % 2 == 0) {
     a = a+"3";
     //if toggle is odd, value is assigned to b
-  } else {
-    b = b+"3";
-  }
-    parseInt(a);
-    parseInt(b);
+    } else {
+      b = b+"3";
+    }
   })
 
-  $('#button4').mousedown(function(){
+  $('#button4').mousedown(function() {
     //if toggle is even, value is assigned to a
     if (toggle % 2 == 0) {
     a = a+"4";
     //if toggle is odd, value is assigned to b
-  } else {
-    b = b+"4";
-  }
-    parseInt(a);
-    parseInt(b);
+    } else {
+      b = b+"4";
+    }
     console.log("a="+a);
     console.log("b="+b);
   })
 
-  $('#button5').mousedown(function(){
+  $('#button5').mousedown(function() {
     //if toggle is even, value is assigned to a
     if (toggle % 2 == 0) {
     a = a+"5";
     //if toggle is odd, value is assigned to b
-  } else {
-    b = b+"5";
-  }
-    parseInt(a);
-    parseInt(b);
+    } else {
+      b = b+"5";
+    }
     console.log("a="+a);
     console.log("b="+b);
   })
 
-  $('#button6').mousedown(function(){
+  $('#button6').mousedown(function() {
     //if toggle is even, value is assigned to a
     if (toggle % 2 == 0) {
     a = a+"6";
     //if toggle is odd, value is assigned to b
-  } else {
-    b = b+"6";
-  }
-    parseInt(a);
-    parseInt(b);
+    } else {
+      b = b+"6";
+    }
     console.log("a="+a);
     console.log("b="+b);
   })
 
-  $('#button7').mousedown(function(){
+  $('#button7').mousedown(function() {
     //if toggle is even, value is assigned to a
     if (toggle % 2 == 0) {
     a = a+"7";
     //if toggle is odd, value is assigned to b
-  } else {
-    b = b+"7";
-  }
-    parseInt(a);
-    parseInt(b);
+    } else {
+      b = b+"7";
+    }
     console.log("a="+a);
     console.log("b="+b);
   })
 
-  $('#button8').mousedown(function(){
+  $('#button8').mousedown(function() {
     //if toggle is even, value is assigned to a
     if (toggle % 2 == 0) {
     a = a+"8";
     //if toggle is odd, value is assigned to b
-  } else {
-    b = b+"8";
-  }
-    parseInt(a);
-    parseInt(b);
+    } else {
+      b = b+"8";
+    }
     console.log("a="+a);
     console.log("b="+b);
   })
 
-  $('#button9').mousedown(function(){
+  $('#button9').mousedown(function() {
     //if toggle is even, value is assigned to a
     if (toggle % 2 == 0) {
     a = a+"9";
     //if toggle is odd, value is assigned to b
-  } else {
-    b = b+"9";
-  }
-    parseInt(a);
-    parseInt(b);
+    } else {
+      b = b+"9";
+    }
     console.log("a="+a);
     console.log("b="+b);
   })
 
-  $('#button0').mousedown(function(){
+  $('#button0').mousedown(function() {
     //if toggle is even, value is assigned to a
     if (toggle % 2 == 0) {
     a = a+"0";
     //if toggle is odd, value is assigned to b
-  } else {
-    b = b+"0";
-  }
-    parseInt(a);
-    parseInt(b);
+    } else {
+      b = b+"0";
+    }
     console.log("a="+a);
     console.log("b="+b);
   })
 
-  $('#decimal').mousedown(function(){
+  $('#decimal').mousedown(function() {
     //if toggle is even, value is assigned to a
     if (toggle % 2 == 0) {
     a = a+".";
     //if toggle is odd, value is assigned to b
-  } else {
-    b = b+".";
-  }
-    parseInt(a);
-    parseInt(b);
+    } else {
+      b = b+".";
+    }
   })
 
-  $('#add').mousedown(function(){
+  $('#add').mousedown(function() {
     add(a,b);
   })
 
-  $('#minus').mousedown(function(){
+  $('#minus').mousedown(function() {
     subtract(a,b);
   })
 
-  $('#divide').mousedown(function(){
+  $('#divide').mousedown(function() {
     divide(a,b);
   })
 
-  $('#multiply').mousedown(function(){
+  $('#multiply').mousedown(function() {
     multiply(a,b);
   })
 
-  $('#clear').mousedown(function(){
+  $('#clear').mousedown(function() {
     a='';
     b='';
     total=0;
-    $('#total-display').html(function(){
+    $('#total-display').html(function() {
       return '<h2>'+total+'</h2>';
     })
   })
@@ -187,17 +165,19 @@ $(document).ready(function(){
 
   function add(a,b) {
     var total = 0;
-    total = parseInt(a) + parseInt(b);
+    var firstNum = parseFloat(a);
+    var secondNum = parseFloat(b);
+    total = firstNum + secondNum;
     toggle++;
-    a = total;
+    /*if (toggle > 1) {
+      a = total
+    }*/
     console.log("b is now =" + b)
     console.log("total=" + total);
-
     //Print total to screen
     $('#total-display').html(function(){
       return '<h2>'+total+'</h2>';
     });
-    return total;
   }
 
   function subtract(a,b) {
@@ -226,5 +206,4 @@ $(document).ready(function(){
     console.log("total=" + total);
     return total;
   }
-
 })
