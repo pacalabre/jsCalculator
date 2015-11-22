@@ -1,6 +1,7 @@
 $(document).ready(function(){
   var a = '';
   var b = '';
+  var total = 0;
   var toggle = 0;
   var button1 = "1";
   var button2 = "2";
@@ -180,21 +181,26 @@ $(document).ready(function(){
     a='';
     b='';
     total=0;
-    console.log("a= "+ a);
-    console.log("b="+ b);
-    console.log(total);
+    $('#total-display').html(function(){
+      return '<h2>'+total+'</h2>';
+    })
   })
 
   //operational functions
 
   function add(a,b) {
-  var total = parseInt(a) + parseInt(b);
-  toggle++;
-  a = total;
-  b = 0;
-  console.log("b is now =" + b)
-  console.log("total=" + total);
-  return total;
+    var total = 0;
+    total = parseInt(a) + parseInt(b);
+    toggle++;
+    a = total;
+    console.log("b is now =" + b)
+    console.log("total=" + total);
+
+    //Print total to screen
+    $('#total-display').html(function(){
+      return '<h2>'+total+'</h2>';
+    });
+    return total;
   }
 
   function subtract(a,b) {
