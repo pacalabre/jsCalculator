@@ -16,7 +16,7 @@ $(document).ready(function(){
   //if button1 is pressed, 1 to var
   $('#button1').mousedown(function(){
     //if toggle is even, value is assigned to var a
-    if (toggle === 0) {
+    if (toggle % 2 == 0) {
     a = a+"1";
     //if toggle is odd, value is assigned to var b
     } else {
@@ -149,14 +149,17 @@ $(document).ready(function(){
   })
 
   $('#minus').mousedown(function() {
+    toggle ++;
     operation = +2;
   })
 
   $('#divide').mousedown(function() {
+    toggle ++;
     operation = +3;
   })
 
   $('#multiply').mousedown(function() {
+    toggle ++;
     operation = +4;
   })
 
@@ -178,9 +181,9 @@ $(document).ready(function(){
     } else if ( operation === 2) {
       subtract(firstNum,secondNum);
     } else if (operation === 3) {
-      multiply(firstNum,secondNum);
-    } else if ( operation === 4 ) {
       divide(firstNum,secondNum);
+    } else if ( operation === 4 ) {
+      multiply(firstNum,secondNum);
     }
     console.log("total= "+total);
   })
@@ -193,38 +196,60 @@ $(document).ready(function(){
     var secondNum = parseFloat(b);
     total = firstNum + secondNum;
     toggle++;
-    console.log("b is now =" + b)
-    console.log("total=" + total);
     //Print total to screen
     $('#total-display').html(function(){
       return '<h2>'+total+'</h2>';
     });
+
+    console.log("b is now =" + b)
+    console.log("total=" + total);
   }
 
   function subtract(a,b) {
-    var total = parseInt(a) - parseInt(b);
+    var total = 0;
+    var firstNum = parseFloat(a);
+    var secondNum = parseFloat(b);
+    total = firstNum - secondNum;
     toggle++;
+    //Print total to screen
+    $('#total-display').html(function(){
+      return '<h2>'+total+'</h2>';
+    })
+
     console.log("a= "+a);
     console.log("b= "+b);
     console.log("total=" + total);
-    return total;
   }
 
   function multiply(a,b) {
-    var total =  parseInt(a) * parseInt(b);
+    var total = 0;
+    var firstNum = parseFloat(a);
+    var secondNum = parseFloat(b);
+    total = firstNum * secondNum;
     toggle++;
+    //Print total to screen
+    $('#total-display').html(function(){
+      return '<h2>'+total+'</h2>';
+    })
+
     console.log("a= "+a);
     console.log("b= "+b);
     console.log("total=" + total);
-    return total;
   }
 
   function divide(a,b) {
-    var total =  parseInt(a) / parseInt(b);
+    var total = 0;
+    var firstNum = parseFloat(a);
+    var secondNum = parseFloat(b);
+    total = firstNum / secondNum;
     toggle++;
+    //Print total to screen
+    $('#total-display').html(function(){
+      return '<h2>'+total+'</h2>';
+    })
+
     console.log("a= "+a);
     console.log("b= "+b);
     console.log("total=" + total);
-    return total;
   }
 })
