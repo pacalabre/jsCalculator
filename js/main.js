@@ -24,9 +24,6 @@ $(document).ready(function(){
   }
     parseInt(a);
     parseInt(b);
-    console.log("a="+a);
-    console.log("b="+b);
-    console.log(toggle);
   })
 
   $('#button2').mousedown(function(){
@@ -39,9 +36,6 @@ $(document).ready(function(){
   }
     parseInt(a);
     parseInt(b);
-    console.log("a="+a);
-    console.log("b="+b);
-    console.log(toggle);
   })
 
   $('#button3').mousedown(function(){
@@ -54,9 +48,6 @@ $(document).ready(function(){
   }
     parseInt(a);
     parseInt(b);
-    console.log("a="+a);
-    console.log("b="+b);
-    console.log(toggle);
   })
 
   $('#button4').mousedown(function(){
@@ -71,7 +62,6 @@ $(document).ready(function(){
     parseInt(b);
     console.log("a="+a);
     console.log("b="+b);
-    console.log(toggle);
   })
 
   $('#button5').mousedown(function(){
@@ -86,7 +76,6 @@ $(document).ready(function(){
     parseInt(b);
     console.log("a="+a);
     console.log("b="+b);
-    console.log(toggle);
   })
 
   $('#button6').mousedown(function(){
@@ -101,7 +90,6 @@ $(document).ready(function(){
     parseInt(b);
     console.log("a="+a);
     console.log("b="+b);
-    console.log(toggle);
   })
 
   $('#button7').mousedown(function(){
@@ -116,7 +104,6 @@ $(document).ready(function(){
     parseInt(b);
     console.log("a="+a);
     console.log("b="+b);
-    console.log(toggle);
   })
 
   $('#button8').mousedown(function(){
@@ -131,7 +118,6 @@ $(document).ready(function(){
     parseInt(b);
     console.log("a="+a);
     console.log("b="+b);
-    console.log(toggle);
   })
 
   $('#button9').mousedown(function(){
@@ -146,7 +132,6 @@ $(document).ready(function(){
     parseInt(b);
     console.log("a="+a);
     console.log("b="+b);
-    console.log(toggle);
   })
 
   $('#button0').mousedown(function(){
@@ -161,7 +146,6 @@ $(document).ready(function(){
     parseInt(b);
     console.log("a="+a);
     console.log("b="+b);
-    console.log(toggle);
   })
 
   $('#decimal').mousedown(function(){
@@ -180,27 +164,63 @@ $(document).ready(function(){
     add(a,b);
   })
 
+  $('#minus').mousedown(function(){
+    subtract(a,b);
+  })
+
+  $('#divide').mousedown(function(){
+    divide(a,b);
+  })
+
+  $('#multiply').mousedown(function(){
+    multiply(a,b);
+  })
+
+  $('#clear').mousedown(function(){
+    a='';
+    b='';
+    total=0;
+    console.log("a= "+ a);
+    console.log("b="+ b);
+    console.log(total);
+  })
+
   //operational functions
 
   function add(a,b) {
-  var total = a + b;
+  var total = parseInt(a) + parseInt(b);
   toggle++;
+  a = total;
+  b = 0;
+  console.log("b is now =" + b)
   console.log("total=" + total);
   return total;
   }
 
   function subtract(a,b) {
-    var total = a - b;
+    var total = parseInt(a) - parseInt(b);
+    toggle++;
+    console.log("a= "+a);
+    console.log("b= "+b);
+    console.log("total=" + total);
     return total;
   }
 
   function multiply(a,b) {
-    var total =  a * b;
+    var total =  parseInt(a) * parseInt(b);
+    toggle++;
+    console.log("a= "+a);
+    console.log("b= "+b);
+    console.log("total=" + total);
     return total;
   }
 
   function divide(a,b) {
-    var total =  a / b;
+    var total =  parseInt(a) / parseInt(b);
+    toggle++;
+    console.log("a= "+a);
+    console.log("b= "+b);
+    console.log("total=" + total);
     return total;
   }
 
