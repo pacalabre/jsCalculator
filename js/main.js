@@ -4,6 +4,13 @@ $(document).ready(function(){
   var b = '';
   var toggle = 0;
 
+  //on load, show total as zero
+  $(window).load(function() {
+    $('#total-display').html(function(){
+    return '<h2>'+total+'</h2>';
+    })
+  })
+
   //if button1 is pressed, 1 is assigned to var a
   $('#button1').mousedown(function(){
     //if toggle is even, value is assigned to a
