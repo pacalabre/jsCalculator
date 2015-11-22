@@ -1,11 +1,13 @@
 $(document).ready(function(){
-  var total = 0;
+  var total = '';
   var a = '';
   var b = '';
   var toggle = 0;
+  var operation = '';
 
   //on load, show total as zero
   $(window).load(function() {
+    total = 0;
     $('#total-display').html(function() {
     return '<h2>'+total+'</h2>';
     })
@@ -14,12 +16,14 @@ $(document).ready(function(){
   //if button1 is pressed, 1 to var
   $('#button1').mousedown(function(){
     //if toggle is even, value is assigned to var a
-    if (toggle % 2 == 0) {
+    if (toggle === 0) {
     a = a+"1";
     //if toggle is odd, value is assigned to var b
     } else {
       b = b+"1";
     }
+    console.log("a= " + a);
+    console.log("b= "+ b);
   })
 
   $('#button2').mousedown(function() {
@@ -30,6 +34,9 @@ $(document).ready(function(){
     } else {
       b = b+"2";
     }
+    console.log("a= " + a);
+    console.log("b= "+ b);
+    console.log(toggle);
   })
 
   $('#button3').mousedown(function() {
@@ -137,19 +144,20 @@ $(document).ready(function(){
   })
 
   $('#add').mousedown(function() {
-    add(a,b);
+    toggle ++;
+    operation = +1;
   })
 
   $('#minus').mousedown(function() {
-    subtract(a,b);
+    operation = +2;
   })
 
   $('#divide').mousedown(function() {
-    divide(a,b);
+    operation = +3;
   })
 
   $('#multiply').mousedown(function() {
-    multiply(a,b);
+    operation = +4;
   })
 
   $('#clear').mousedown(function() {
@@ -161,6 +169,22 @@ $(document).ready(function(){
     })
   })
 
+  $('#equals').mousedown(function() {
+    var firstNum = parseFloat(a);
+    var secondNum = parseFloat(b);
+
+    if (operation === 1) {
+      add(firstNum,secondNum);
+    } else if ( operation === 2) {
+      subtract(firstNum,secondNum);
+    } else if (operation === 3) {
+      multiply(firstNum,secondNum);
+    } else if ( operation === 4 ) {
+      divide(firstNum,secondNum);
+    }
+    console.log("total= "+total);
+  })
+
   //operational functions
 
   function add(a,b) {
@@ -169,9 +193,6 @@ $(document).ready(function(){
     var secondNum = parseFloat(b);
     total = firstNum + secondNum;
     toggle++;
-    /*if (toggle > 1) {
-      a = total
-    }*/
     console.log("b is now =" + b)
     console.log("total=" + total);
     //Print total to screen
