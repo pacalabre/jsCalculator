@@ -1,27 +1,17 @@
 $(document).ready(function(){
+  var total = 0;
   var a = '';
   var b = '';
-  var total = 0;
   var toggle = 0;
-  var button1 = "1";
-  var button2 = "2";
-  var button3 = "3";
-  var button4 = "4";
-  var button5 = "5";
-  var button6 = "6";
-  var button7 = "7";
-  var button8 = "8";
-  var button9 = "9";
-  var button0 = "0";
 
   //if button1 is pressed, 1 is assigned to var a
   $('#button1').mousedown(function(){
     //if toggle is even, value is assigned to a
     if (toggle % 2 == 0) {
-    a = a+button1;
+    a = a+"1";
     //if toggle is odd, value is assigned to b
   } else {
-    b = b+button1;
+    b = b+"1";
   }
     parseInt(a);
     parseInt(b);
@@ -30,10 +20,10 @@ $(document).ready(function(){
   $('#button2').mousedown(function(){
     //if toggle is even, value is assigned to a
     if (toggle % 2 == 0) {
-    a = a+button2;
+    a = a+"2";
     //if toggle is odd, value is assigned to b
   } else {
-    b = b+button2;
+    b = b+"2";
   }
     parseInt(a);
     parseInt(b);
@@ -42,10 +32,10 @@ $(document).ready(function(){
   $('#button3').mousedown(function(){
     //if toggle is even, value is assigned to a
     if (toggle % 2 == 0) {
-    a = a+button3;
+    a = a+"3";
     //if toggle is odd, value is assigned to b
   } else {
-    b = b+button3;
+    b = b+"3";
   }
     parseInt(a);
     parseInt(b);
@@ -54,10 +44,10 @@ $(document).ready(function(){
   $('#button4').mousedown(function(){
     //if toggle is even, value is assigned to a
     if (toggle % 2 == 0) {
-    a = a+button4;
+    a = a+"4";
     //if toggle is odd, value is assigned to b
   } else {
-    b = b+button4;
+    b = b+"4";
   }
     parseInt(a);
     parseInt(b);
@@ -68,10 +58,10 @@ $(document).ready(function(){
   $('#button5').mousedown(function(){
     //if toggle is even, value is assigned to a
     if (toggle % 2 == 0) {
-    a = a+button5;
+    a = a+"5";
     //if toggle is odd, value is assigned to b
   } else {
-    b = b+button5;
+    b = b+"5";
   }
     parseInt(a);
     parseInt(b);
@@ -82,10 +72,10 @@ $(document).ready(function(){
   $('#button6').mousedown(function(){
     //if toggle is even, value is assigned to a
     if (toggle % 2 == 0) {
-    a = a+button6;
+    a = a+"6";
     //if toggle is odd, value is assigned to b
   } else {
-    b = b+button6;
+    b = b+"6";
   }
     parseInt(a);
     parseInt(b);
@@ -96,10 +86,10 @@ $(document).ready(function(){
   $('#button7').mousedown(function(){
     //if toggle is even, value is assigned to a
     if (toggle % 2 == 0) {
-    a = a+button7;
+    a = a+"7";
     //if toggle is odd, value is assigned to b
   } else {
-    b = b+button7;
+    b = b+"7";
   }
     parseInt(a);
     parseInt(b);
@@ -110,10 +100,10 @@ $(document).ready(function(){
   $('#button8').mousedown(function(){
     //if toggle is even, value is assigned to a
     if (toggle % 2 == 0) {
-    a = a+button8;
+    a = a+"8";
     //if toggle is odd, value is assigned to b
   } else {
-    b = b+button8;
+    b = b+"8";
   }
     parseInt(a);
     parseInt(b);
@@ -124,10 +114,10 @@ $(document).ready(function(){
   $('#button9').mousedown(function(){
     //if toggle is even, value is assigned to a
     if (toggle % 2 == 0) {
-    a = a+button9;
+    a = a+"9";
     //if toggle is odd, value is assigned to b
   } else {
-    b = b+button9;
+    b = b+"9";
   }
     parseInt(a);
     parseInt(b);
@@ -138,10 +128,10 @@ $(document).ready(function(){
   $('#button0').mousedown(function(){
     //if toggle is even, value is assigned to a
     if (toggle % 2 == 0) {
-    a = a+button0;
+    a = a+"0";
     //if toggle is odd, value is assigned to b
   } else {
-    b = b+button0;
+    b = b+"0";
   }
     parseInt(a);
     parseInt(b);
