@@ -25,7 +25,9 @@ $(document).ready(function(){
     //new value is assigned to var b
     } else if (toggle > 1) {
       a = total;
-      console.log("a is now "+a);
+      b='';
+      b=b+"1"
+      toggle = 1;
     }
     console.log("a= " + a);
     console.log("b= "+ b);
@@ -44,6 +46,9 @@ $(document).ready(function(){
     //new value is assigned to var b
     } else if (toggle > 1) {
       a = total;
+      b ='';
+      b = b + "2";
+      toggle = 1;
       console.log("a is now "+a);
     }
     console.log("a= " + a);
@@ -63,6 +68,9 @@ $(document).ready(function(){
     //new value is assigned to var b
     } else if (toggle > 1) {
       a = total;
+      b ='';
+      b = b + "3";
+      toggle = 1;
       console.log("a is now "+a);
     }
     console.log("a= " + a);
@@ -82,6 +90,9 @@ $(document).ready(function(){
     //new value is assigned to var b
     } else if (toggle > 1) {
       a = total;
+      b ='';
+      b = b + "4";
+      toggle = 1;
       console.log("a is now "+a);
     }
     console.log("a= " + a);
@@ -101,6 +112,9 @@ $(document).ready(function(){
     //new value is assigned to var b
     } else if (toggle > 1) {
       a = total;
+      b ='';
+      b = b + "5";
+      toggle = 1;
       console.log("a is now "+a);
     }
     console.log("a= " + a);
@@ -120,6 +134,9 @@ $(document).ready(function(){
     //new value is assigned to var b
     } else if (toggle > 1) {
       a = total;
+      b ='';
+      b = b + "6";
+      toggle = 1;
       console.log("a is now "+a);
     }
     console.log("a= " + a);
@@ -139,6 +156,9 @@ $(document).ready(function(){
     //new value is assigned to var b
     } else if (toggle > 1) {
       a = total;
+      b ='';
+      b = b + "7";
+      toggle = 1;
       console.log("a is now "+a);
     }
     console.log("a= " + a);
@@ -158,6 +178,9 @@ $(document).ready(function(){
     //new value is assigned to var b
     } else if (toggle > 1) {
       a = total;
+      b ='';
+      b = b + "8";
+      toggle = 1;
       console.log("a is now "+a);
     }
     console.log("a= " + a);
@@ -177,6 +200,9 @@ $(document).ready(function(){
     //new value is assigned to var b
     } else if (toggle > 1) {
       a = total;
+      b ='';
+      b = b + "9";
+      toggle = 1;
       console.log("a is now "+a);
     }
     console.log("a= " + a);
@@ -196,6 +222,9 @@ $(document).ready(function(){
     //new value is assigned to var b
     } else if (toggle > 1) {
       a = total;
+      b = '';
+      b = b + "0";
+      toggle = 1;
       console.log("a is now "+a);
     }
     console.log("a= " + a);
@@ -215,6 +244,9 @@ $(document).ready(function(){
     //new value is assigned to var b
     } else if (toggle > 1) {
       a = total;
+      b = '';
+      b = b + ".";
+      toggle = 1;
       console.log("a is now "+a);
     }
     console.log("a= " + a);
@@ -246,10 +278,13 @@ $(document).ready(function(){
   $('#clear').mousedown(function() {
     a='';
     b='';
-    total=0;
+    total= 0;
+    toggle = 0;
+    operation = 0;
     $('#total-display').html(function() {
       return '<h2>'+total+'</h2>';
     })
+    return total = 0;
   })
 
   $('#equals').mousedown(function() {
@@ -293,10 +328,7 @@ $(document).ready(function(){
     $('#total-display').html(function(){
       return '<h2>'+total+'</h2>';
     })
-
-    console.log("a= "+a);
-    console.log("b= "+b);
-    console.log("total=" + total);
+    return total = firstNum - secondNum;
   }
 
   function multiply(a,b) {
@@ -309,10 +341,7 @@ $(document).ready(function(){
     $('#total-display').html(function(){
       return '<h2>'+total+'</h2>';
     })
-
-    console.log("a= "+a);
-    console.log("b= "+b);
-    console.log("total=" + total);
+    return total = firstNum * secondNum;
   }
 
   function divide(a,b) {
@@ -325,9 +354,6 @@ $(document).ready(function(){
     $('#total-display').html(function(){
       return '<h2>'+total+'</h2>';
     })
-
-    console.log("a= "+a);
-    console.log("b= "+b);
-    console.log("total=" + total);
+    return total = firstNum / secondNum;
   }
 })
