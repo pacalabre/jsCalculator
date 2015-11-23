@@ -3,27 +3,34 @@ $(document).ready(function(){
   var a = '';
   var b = '';
   var toggle = 0;
-  var operation = '';
+  var operation = 0;
 
   //on load, show total as zero
   $(window).load(function() {
-    total = 0;
+    // 0 is displayed upon screen load;
     $('#total-display').html(function() {
-    return '<h2>'+total+'</h2>';
+    return '<h2>'+0+'</h2>';
     })
   })
 
   //if button1 is pressed, 1 to var
   $('#button1').mousedown(function(){
-    //if toggle is even, value is assigned to var a
-    if (toggle % 2 == 0) {
+    //if toggle is zero, value is assigned to var a
+    if (toggle === 0) {
     a = a+"1";
-    //if toggle is odd, value is assigned to var b
-    } else {
+    //if toggle is equal to 1, value is assigned to var b
+    } else if (toggle === 1) {
       b = b+"1";
+    // if toggle is greater than 1, var a is equal to the total,
+    //new value is assigned to var b
+    } else if (toggle > 1) {
+      a = total;
+      console.log("a is now "+a);
     }
     console.log("a= " + a);
     console.log("b= "+ b);
+    console.log("toggle= "+ toggle);
+    console.log("total= "+total);
   })
 
   $('#button2').mousedown(function() {
@@ -175,17 +182,17 @@ $(document).ready(function(){
   $('#equals').mousedown(function() {
     var firstNum = parseFloat(a);
     var secondNum = parseFloat(b);
+    toggle ++;
 
     if (operation === 1) {
-      add(firstNum,secondNum);
+     total = add(firstNum,secondNum);
     } else if ( operation === 2) {
-      subtract(firstNum,secondNum);
+     total = subtract(firstNum,secondNum);
     } else if (operation === 3) {
-      divide(firstNum,secondNum);
+      total = divide(firstNum,secondNum);
     } else if ( operation === 4 ) {
-      multiply(firstNum,secondNum);
+      total = multiply(firstNum,secondNum);
     }
-    console.log("total= "+total);
   })
 
   //operational functions
@@ -200,9 +207,7 @@ $(document).ready(function(){
     $('#total-display').html(function(){
       return '<h2>'+total+'</h2>';
     });
-
-    console.log("b is now =" + b)
-    console.log("total=" + total);
+    return total = firstNum + secondNum;
   }
 
   function subtract(a,b) {
