@@ -34,120 +34,193 @@ $(document).ready(function(){
   })
 
   $('#button2').mousedown(function() {
-    //if toggle is even, value is assigned to a
-    if (toggle % 2 == 0) {
+    //if toggle is zero, value is assigned to var a
+    if (toggle === 0) {
     a = a+"2";
-    //if toggle is odd, value is assigned to b
-    } else {
+    //if toggle is equal to 1, value is assigned to var b
+    } else if (toggle === 1) {
       b = b+"2";
+    // if toggle is greater than 1, var a is equal to the total,
+    //new value is assigned to var b
+    } else if (toggle > 1) {
+      a = total;
+      console.log("a is now "+a);
     }
     console.log("a= " + a);
     console.log("b= "+ b);
-    console.log(toggle);
+    console.log("toggle= "+ toggle);
+    console.log("total= "+total);
   })
 
   $('#button3').mousedown(function() {
-    //if toggle is even, value is assigned to a
-    if (toggle % 2 == 0) {
+    //if toggle is zero, value is assigned to var a
+    if (toggle === 0) {
     a = a+"3";
-    //if toggle is odd, value is assigned to b
-    } else {
+    //if toggle is equal to 1, value is assigned to var b
+    } else if (toggle === 1) {
       b = b+"3";
+    // if toggle is greater than 1, var a is equal to the total,
+    //new value is assigned to var b
+    } else if (toggle > 1) {
+      a = total;
+      console.log("a is now "+a);
     }
+    console.log("a= " + a);
+    console.log("b= "+ b);
+    console.log("toggle= "+ toggle);
+    console.log("total= "+total);
   })
 
   $('#button4').mousedown(function() {
-    //if toggle is even, value is assigned to a
-    if (toggle % 2 == 0) {
+    //if toggle is zero, value is assigned to var a
+    if (toggle === 0) {
     a = a+"4";
-    //if toggle is odd, value is assigned to b
-    } else {
+    //if toggle is equal to 1, value is assigned to var b
+    } else if (toggle === 1) {
       b = b+"4";
+    // if toggle is greater than 1, var a is equal to the total,
+    //new value is assigned to var b
+    } else if (toggle > 1) {
+      a = total;
+      console.log("a is now "+a);
     }
-    console.log("a="+a);
-    console.log("b="+b);
+    console.log("a= " + a);
+    console.log("b= "+ b);
+    console.log("toggle= "+ toggle);
+    console.log("total= "+total);
   })
 
   $('#button5').mousedown(function() {
-    //if toggle is even, value is assigned to a
-    if (toggle % 2 == 0) {
+    //if toggle is zero, value is assigned to var a
+    if (toggle === 0) {
     a = a+"5";
-    //if toggle is odd, value is assigned to b
-    } else {
+    //if toggle is equal to 1, value is assigned to var b
+    } else if (toggle === 1) {
       b = b+"5";
+    // if toggle is greater than 1, var a is equal to the total,
+    //new value is assigned to var b
+    } else if (toggle > 1) {
+      a = total;
+      console.log("a is now "+a);
     }
-    console.log("a="+a);
-    console.log("b="+b);
+    console.log("a= " + a);
+    console.log("b= "+ b);
+    console.log("toggle= "+ toggle);
+    console.log("total= "+total);
   })
 
   $('#button6').mousedown(function() {
-    //if toggle is even, value is assigned to a
-    if (toggle % 2 == 0) {
+    //if toggle is zero, value is assigned to var a
+    if (toggle === 0) {
     a = a+"6";
-    //if toggle is odd, value is assigned to b
-    } else {
+    //if toggle is equal to 1, value is assigned to var b
+    } else if (toggle === 1) {
       b = b+"6";
+    // if toggle is greater than 1, var a is equal to the total,
+    //new value is assigned to var b
+    } else if (toggle > 1) {
+      a = total;
+      console.log("a is now "+a);
     }
-    console.log("a="+a);
-    console.log("b="+b);
+    console.log("a= " + a);
+    console.log("b= "+ b);
+    console.log("toggle= "+ toggle);
+    console.log("total= "+total);
   })
 
   $('#button7').mousedown(function() {
-    //if toggle is even, value is assigned to a
-    if (toggle % 2 == 0) {
+    //if toggle is zero, value is assigned to var a
+    if (toggle === 0) {
     a = a+"7";
-    //if toggle is odd, value is assigned to b
-    } else {
+    //if toggle is equal to 1, value is assigned to var b
+    } else if (toggle === 1) {
       b = b+"7";
+    // if toggle is greater than 1, var a is equal to the total,
+    //new value is assigned to var b
+    } else if (toggle > 1) {
+      a = total;
+      console.log("a is now "+a);
     }
-    console.log("a="+a);
-    console.log("b="+b);
+    console.log("a= " + a);
+    console.log("b= "+ b);
+    console.log("toggle= "+ toggle);
+    console.log("total= "+total);
   })
 
   $('#button8').mousedown(function() {
-    //if toggle is even, value is assigned to a
-    if (toggle % 2 == 0) {
+    //if toggle is zero, value is assigned to var a
+    if (toggle === 0) {
     a = a+"8";
-    //if toggle is odd, value is assigned to b
-    } else {
+    //if toggle is equal to 1, value is assigned to var b
+    } else if (toggle === 1) {
       b = b+"8";
+    // if toggle is greater than 1, var a is equal to the total,
+    //new value is assigned to var b
+    } else if (toggle > 1) {
+      a = total;
+      console.log("a is now "+a);
     }
-    console.log("a="+a);
-    console.log("b="+b);
+    console.log("a= " + a);
+    console.log("b= "+ b);
+    console.log("toggle= "+ toggle);
+    console.log("total= "+total);
   })
 
   $('#button9').mousedown(function() {
-    //if toggle is even, value is assigned to a
-    if (toggle % 2 == 0) {
+    //if toggle is zero, value is assigned to var a
+    if (toggle === 0) {
     a = a+"9";
-    //if toggle is odd, value is assigned to b
-    } else {
+    //if toggle is equal to 1, value is assigned to var b
+    } else if (toggle === 1) {
       b = b+"9";
+    // if toggle is greater than 1, var a is equal to the total,
+    //new value is assigned to var b
+    } else if (toggle > 1) {
+      a = total;
+      console.log("a is now "+a);
     }
-    console.log("a="+a);
-    console.log("b="+b);
+    console.log("a= " + a);
+    console.log("b= "+ b);
+    console.log("toggle= "+ toggle);
+    console.log("total= "+total);
   })
 
   $('#button0').mousedown(function() {
-    //if toggle is even, value is assigned to a
-    if (toggle % 2 == 0) {
+    //if toggle is zero, value is assigned to var a
+    if (toggle === 0) {
     a = a+"0";
-    //if toggle is odd, value is assigned to b
-    } else {
+    //if toggle is equal to 1, value is assigned to var b
+    } else if (toggle === 1) {
       b = b+"0";
+    // if toggle is greater than 1, var a is equal to the total,
+    //new value is assigned to var b
+    } else if (toggle > 1) {
+      a = total;
+      console.log("a is now "+a);
     }
-    console.log("a="+a);
-    console.log("b="+b);
+    console.log("a= " + a);
+    console.log("b= "+ b);
+    console.log("toggle= "+ toggle);
+    console.log("total= "+total);
   })
 
   $('#decimal').mousedown(function() {
-    //if toggle is even, value is assigned to a
-    if (toggle % 2 == 0) {
+    //if toggle is zero, value is assigned to var a
+    if (toggle === 0) {
     a = a+".";
-    //if toggle is odd, value is assigned to b
-    } else {
+    //if toggle is equal to 1, value is assigned to var b
+    } else if (toggle === 1) {
       b = b+".";
+    // if toggle is greater than 1, var a is equal to the total,
+    //new value is assigned to var b
+    } else if (toggle > 1) {
+      a = total;
+      console.log("a is now "+a);
     }
+    console.log("a= " + a);
+    console.log("b= "+ b);
+    console.log("toggle= "+ toggle);
+    console.log("total= "+total);
   })
 
   $('#add').mousedown(function() {
