@@ -15,7 +15,7 @@ $(document).ready(function() {
 // Button Assignments
 
   /* All of the button assignments will follow the logic of button1.
-  I have (possibly) overcommented button one for future reference */
+  I have overcommented button1 for future reference */
 
   //if button1 is pressed, 1 to var
   $('#button1').mousedown(function(){
