@@ -21,6 +21,10 @@ $(document).ready(function(){
     //if toggle is equal to 1, value is assigned to var b
     } else if (toggle === 1) {
       b = b+"1";
+      // 0 is displayed upon screen load;
+    $('#total-display').html(function() {
+    return '<h2>'+b+'</h2>';
+    })
     // if toggle is greater than 1, var a is equal to the total,
     //new value is assigned to var b
     } else if (toggle > 1) {
@@ -35,6 +39,7 @@ $(document).ready(function(){
     console.log("total= "+total);
   })
 
+  //if button2 is pressed, 2 to var
   $('#button2').mousedown(function() {
     //if toggle is zero, value is assigned to var a
     if (toggle === 0) {
@@ -57,6 +62,7 @@ $(document).ready(function(){
     console.log("total= "+total);
   })
 
+  //if button3 is pressed, 3 to var
   $('#button3').mousedown(function() {
     //if toggle is zero, value is assigned to var a
     if (toggle === 0) {
@@ -79,6 +85,7 @@ $(document).ready(function(){
     console.log("total= "+total);
   })
 
+  //if button4 is pressed, 4 to var
   $('#button4').mousedown(function() {
     //if toggle is zero, value is assigned to var a
     if (toggle === 0) {
@@ -101,6 +108,7 @@ $(document).ready(function(){
     console.log("total= "+total);
   })
 
+  //if button5 is pressed, 5 to var
   $('#button5').mousedown(function() {
     //if toggle is zero, value is assigned to var a
     if (toggle === 0) {
@@ -123,6 +131,7 @@ $(document).ready(function(){
     console.log("total= "+total);
   })
 
+  //if button6 is pressed, 6 to var
   $('#button6').mousedown(function() {
     //if toggle is zero, value is assigned to var a
     if (toggle === 0) {
@@ -145,6 +154,7 @@ $(document).ready(function(){
     console.log("total= "+total);
   })
 
+  //if button7 is pressed, 7 to var
   $('#button7').mousedown(function() {
     //if toggle is zero, value is assigned to var a
     if (toggle === 0) {
@@ -167,6 +177,7 @@ $(document).ready(function(){
     console.log("total= "+total);
   })
 
+  //if button8 is pressed, 8 to var
   $('#button8').mousedown(function() {
     //if toggle is zero, value is assigned to var a
     if (toggle === 0) {
@@ -189,6 +200,7 @@ $(document).ready(function(){
     console.log("total= "+total);
   })
 
+  //if button9 is pressed, 9 to var
   $('#button9').mousedown(function() {
     //if toggle is zero, value is assigned to var a
     if (toggle === 0) {
@@ -211,6 +223,7 @@ $(document).ready(function(){
     console.log("total= "+total);
   })
 
+  //if button0 is pressed, 0 to var
   $('#button0').mousedown(function() {
     //if toggle is zero, value is assigned to var a
     if (toggle === 0) {
@@ -233,6 +246,7 @@ $(document).ready(function(){
     console.log("total= "+total);
   })
 
+  //if decimal is pressed, . to var
   $('#decimal').mousedown(function() {
     //if toggle is zero, value is assigned to var a
     if (toggle === 0) {
@@ -255,26 +269,31 @@ $(document).ready(function(){
     console.log("total= "+total);
   })
 
+  //if plus sign button is pressed, 1 to equals function
   $('#add').mousedown(function() {
     toggle ++;
     operation = +1;
   })
 
+  //if minus sign button is pressed, 2 to equals function
   $('#minus').mousedown(function() {
     toggle ++;
     operation = +2;
   })
 
+  //if divide sign button is pressed, 3 to equals function
   $('#divide').mousedown(function() {
     toggle ++;
     operation = +3;
   })
 
+  //if multiply button is pressed, 4 to equals function
   $('#multiply').mousedown(function() {
     toggle ++;
     operation = +4;
   })
 
+  //if clear button is pressed, reset global variables
   $('#clear').mousedown(function() {
     a='';
     b='';
@@ -287,6 +306,7 @@ $(document).ready(function(){
     return total = 0;
   })
 
+  //if equals sign is pressed, run selected operator
   $('#equals').mousedown(function() {
     var firstNum = parseFloat(a);
     var secondNum = parseFloat(b);
@@ -305,6 +325,7 @@ $(document).ready(function(){
 
   //operational functions
 
+  //addition function
   function add(a,b) {
     var total = 0;
     var firstNum = parseFloat(a);
@@ -318,6 +339,7 @@ $(document).ready(function(){
     return total = firstNum + secondNum;
   }
 
+  //subtraction function
   function subtract(a,b) {
     var total = 0;
     var firstNum = parseFloat(a);
@@ -331,6 +353,7 @@ $(document).ready(function(){
     return total = firstNum - secondNum;
   }
 
+  //multiplication function
   function multiply(a,b) {
     var total = 0;
     var firstNum = parseFloat(a);
@@ -344,6 +367,7 @@ $(document).ready(function(){
     return total = firstNum * secondNum;
   }
 
+  //division function
   function divide(a,b) {
     var total = 0;
     var firstNum = parseFloat(a);
