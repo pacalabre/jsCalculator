@@ -7,11 +7,15 @@ $(document).ready(function() {
 
   //on load, show total as zero
   $(window).load(function() {
-    // 0 is displayed upon screen load;
     $('#total-display').html(function() {
     return '<h2>'+0+'</h2>';
     })
   })
+
+// Button Assignments
+
+  /* All of the button assignments will follow the logic of button1.
+  I have (possibly) overcommented button one for future reference */
 
   //if button1 is pressed, 1 to var
   $('#button1').mousedown(function(){
@@ -39,15 +43,11 @@ $(document).ready(function() {
 
   //if button2 is pressed, 2 to var
   $('#button2').mousedown(function() {
-    //if toggle is zero, value is assigned to var a
     if (toggle === 0) {
     a = a+"2";
-    // if var a = 2, 2 is displayed on the screen
     printA();
-    //if toggle is equal to 1, value is assigned to var b
     } else if (toggle === 1) {
       b = b+"2";
-    // if var b = 2, 2 is displayed on the screen
     printB();
     // if toggle is greater than 1, var a is equal to the total,
     //new value is assigned to var b
@@ -55,7 +55,6 @@ $(document).ready(function() {
       a = total;
       b ='';
       b = b + "2";
-    // if var b = 2, 2 is displayed on the screen
       printB();
       toggle = 1;
     }
@@ -63,15 +62,11 @@ $(document).ready(function() {
 
   //if button3 is pressed, 3 to var
   $('#button3').mousedown(function() {
-    //if toggle is zero, value is assigned to var a
     if (toggle === 0) {
     a = a+"3";
-    // if var a = 3, 3 is displayed on the screen
     printA();
-    //if toggle is equal to 1, value is assigned to var b
     } else if (toggle === 1) {
       b = b+"3";
-    // if var b = 3, 3 is displayed on the screen
     printB();
     // if toggle is greater than 1, var a is equal to the total,
     //new value is assigned to var b
@@ -79,7 +74,6 @@ $(document).ready(function() {
       a = total;
       b ='';
       b = b + "3";
-    // if var b = 3, 3 is displayed on the screen
       printB();
       toggle = 1;
     }
@@ -87,15 +81,11 @@ $(document).ready(function() {
 
   //if button4 is pressed, 4 to var
   $('#button4').mousedown(function() {
-    //if toggle is zero, value is assigned to var a
     if (toggle === 0) {
     a = a+"4";
-    // if var a = 4, 4 is displayed on the screen
     printA();
-    //if toggle is equal to 1, value is assigned to var b
     } else if (toggle === 1) {
       b = b+"4";
-    // if var b = 4, 4 is displayed on the screen
     printB();
     // if toggle is greater than 1, var a is equal to the total,
     //new value is assigned to var b
@@ -103,7 +93,6 @@ $(document).ready(function() {
       a = total;
       b ='';
       b = b + "4";
-    // if var b = 4, 4 is displayed on the screen
       printB();
       toggle = 1;
     }
@@ -111,15 +100,11 @@ $(document).ready(function() {
 
   //if button5 is pressed, 5 to var
   $('#button5').mousedown(function() {
-    //if toggle is zero, value is assigned to var a
     if (toggle === 0) {
     a = a+"5";
-    // if var a = 5, 5 is displayed on the screen
     printA();
-    //if toggle is equal to 1, value is assigned to var b
     } else if (toggle === 1) {
       b = b+"5";
-    // if var b = 5, 5 is displayed on the screen
     printB();
     // if toggle is greater than 1, var a is equal to the total,
     //new value is assigned to var b
@@ -127,7 +112,6 @@ $(document).ready(function() {
       a = total;
       b ='';
       b = b + "5";
-    // if var b = 5, 5 is displayed on the screen
       printB();
       toggle = 1;
     }
@@ -135,15 +119,11 @@ $(document).ready(function() {
 
   //if button6 is pressed, 6 to var
   $('#button6').mousedown(function() {
-    //if toggle is zero, value is assigned to var a
     if (toggle === 0) {
     a = a+"6";
-    // if var a = 6, 6 is displayed on the screen
     printA();
-    //if toggle is equal to 1, value is assigned to var b
     } else if (toggle === 1) {
       b = b+"6";
-    // if var b = 6, 6 is displayed on the screen
     printB();
     // if toggle is greater than 1, var a is equal to the total,
     //new value is assigned to var b
@@ -151,7 +131,6 @@ $(document).ready(function() {
       a = total;
       b ='';
       b = b + "6";
-    // if var b = 6, 6 is displayed on the screen
       printB();
       toggle = 1;
     }
@@ -159,15 +138,11 @@ $(document).ready(function() {
 
   //if button7 is pressed, 7 to var
   $('#button7').mousedown(function() {
-    //if toggle is zero, value is assigned to var a
     if (toggle === 0) {
     a = a+"7";
-    // if var a = 7, 7 is displayed on the screen
     printA();
-    //if toggle is equal to 1, value is assigned to var b
     } else if (toggle === 1) {
       b = b+"7";
-    // if var b = 7, 7 is displayed on the screen
     printB();
     // if toggle is greater than 1, var a is equal to the total,
     //new value is assigned to var b
@@ -175,7 +150,6 @@ $(document).ready(function() {
       a = total;
       b ='';
       b = b + "7";
-    // if var b = 7, 7 is displayed on the screen
       printB();
       toggle = 1;
     }
@@ -183,15 +157,11 @@ $(document).ready(function() {
 
   //if button8 is pressed, 8 to var
   $('#button8').mousedown(function() {
-    //if toggle is zero, value is assigned to var a
     if (toggle === 0) {
     a = a+"8";
-    // if var a = 8, 8 is displayed on the screen
     printA();
-    //if toggle is equal to 1, value is assigned to var b
     } else if (toggle === 1) {
       b = b+"8";
-    // if var b = 8, 8 is displayed on the screen
       printB();
     // if toggle is greater than 1, var a is equal to the total,
     //new value is assigned to var b
@@ -199,7 +169,6 @@ $(document).ready(function() {
       a = total;
       b ='';
       b = b + "8";
-    // if var b = 8, 8 is displayed on the screen
       printB();
       toggle = 1;
     }
@@ -207,15 +176,11 @@ $(document).ready(function() {
 
   //if button9 is pressed, 9 to var
   $('#button9').mousedown(function() {
-    //if toggle is zero, value is assigned to var a
     if (toggle === 0) {
-    // if var a = 9, 9 is displayed on the screen
     a = a+"9";
     printA();
-    //if toggle is equal to 1, value is assigned to var b
     } else if (toggle === 1) {
       b = b+"9";
-    // if var b = 9, 9 is displayed on the screen
     printB();
     // if toggle is greater than 1, var a is equal to the total,
     //new value is assigned to var b
@@ -223,7 +188,6 @@ $(document).ready(function() {
       a = total;
       b ='';
       b = b + "9";
-    // if var b = 9, 9 is displayed on the screen
       printB();
       toggle = 1;
     }
@@ -231,14 +195,11 @@ $(document).ready(function() {
 
   //if button0 is pressed, 0 to var
   $('#button0').mousedown(function() {
-    //if toggle is zero, value is assigned to var a
     if (toggle === 0) {
     a = a+"0";
     printA();
-    //if toggle is equal to 1, value is assigned to var b
     } else if (toggle === 1) {
       b = b+"0";
-      // if var b = 0, 0 is displayed on the screen
       printB();
     // if toggle is greater than 1, var a is equal to the total,
     //new value is assigned to var b
@@ -246,7 +207,6 @@ $(document).ready(function() {
       a = total;
       b = '';
       b = b + "0";
-      // if var b = 0, 0 is displayed on the screen
       printB();
       toggle = 1;
     }
@@ -254,15 +214,11 @@ $(document).ready(function() {
 
   //if decimal is pressed, . to var
   $('#decimal').mousedown(function() {
-    //if toggle is zero, value is assigned to var a
     if (toggle === 0) {
     a = a+".";
-    // if var a = ., . is displayed on the screen
     printA();
-    //if toggle is equal to 1, value is assigned to var b
     } else if (toggle === 1) {
       b = b+".";
-      // if var b = ., . is displayed on the screen
       printB();
     // if toggle is greater than 1, var a is equal to the total,
     //new value is assigned to var b
@@ -270,7 +226,6 @@ $(document).ready(function() {
       a = total;
       b = '';
       b = b + ".";
-      // if var b = ., . is displayed on the screen
       printB();
       toggle = 1;
     }
@@ -334,16 +289,14 @@ $(document).ready(function() {
 
 //Functions
 
-  //print to screen functions
+  //print variables to screen functions
 
-  //print var a to screen
   function printA() {
     $('#total-display').html(function() {
     return '<h2>'+a+'</h2>';
     })
   }
 
-  //print var b to screen
   function printB() {
     $('#total-display').html(function() {
     return '<h2>'+b+'</h2>';
@@ -352,7 +305,6 @@ $(document).ready(function() {
 
   //operational functions
 
-  //addition function
   function add(a,b) {
     var total = 0;
     var firstNum = parseFloat(a);
@@ -367,7 +319,6 @@ $(document).ready(function() {
     return total = firstNum + secondNum;
   }
 
-  //subtraction function
   function subtract(a,b) {
     var total = 0;
     var firstNum = parseFloat(a);
@@ -382,7 +333,6 @@ $(document).ready(function() {
     return total = firstNum - secondNum;
   }
 
-  //multiplication function
   function multiply(a,b) {
     var total = 0;
     var firstNum = parseFloat(a);
@@ -397,7 +347,6 @@ $(document).ready(function() {
     return total = firstNum * secondNum;
   }
 
-  //division function
   function divide(a,b) {
     var total = 0;
     var firstNum = parseFloat(a);
