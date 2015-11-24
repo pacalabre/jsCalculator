@@ -35,10 +35,6 @@ $(document).ready(function() {
       printB();
       toggle = 1;
     }
-    console.log("a= " + a);
-    console.log("b= "+ b);
-    console.log("toggle= "+ toggle);
-    console.log("total= "+total);
   })
 
   //if button2 is pressed, 2 to var
@@ -62,12 +58,7 @@ $(document).ready(function() {
     // if var b = 2, 2 is displayed on the screen
       printB();
       toggle = 1;
-      console.log("a is now "+a);
     }
-    console.log("a= " + a);
-    console.log("b= "+ b);
-    console.log("toggle= "+ toggle);
-    console.log("total= "+total);
   })
 
   //if button3 is pressed, 3 to var
@@ -91,12 +82,7 @@ $(document).ready(function() {
     // if var b = 3, 3 is displayed on the screen
       printB();
       toggle = 1;
-      console.log("a is now "+a);
     }
-    console.log("a= " + a);
-    console.log("b= "+ b);
-    console.log("toggle= "+ toggle);
-    console.log("total= "+total);
   })
 
   //if button4 is pressed, 4 to var
@@ -120,12 +106,7 @@ $(document).ready(function() {
     // if var b = 4, 4 is displayed on the screen
       printB();
       toggle = 1;
-      console.log("a is now "+a);
     }
-    console.log("a= " + a);
-    console.log("b= "+ b);
-    console.log("toggle= "+ toggle);
-    console.log("total= "+total);
   })
 
   //if button5 is pressed, 5 to var
@@ -149,12 +130,7 @@ $(document).ready(function() {
     // if var b = 5, 5 is displayed on the screen
       printB();
       toggle = 1;
-      console.log("a is now "+a);
     }
-    console.log("a= " + a);
-    console.log("b= "+ b);
-    console.log("toggle= "+ toggle);
-    console.log("total= "+total);
   })
 
   //if button6 is pressed, 6 to var
@@ -178,12 +154,7 @@ $(document).ready(function() {
     // if var b = 6, 6 is displayed on the screen
       printB();
       toggle = 1;
-      console.log("a is now "+a);
     }
-    console.log("a= " + a);
-    console.log("b= "+ b);
-    console.log("toggle= "+ toggle);
-    console.log("total= "+total);
   })
 
   //if button7 is pressed, 7 to var
@@ -207,12 +178,7 @@ $(document).ready(function() {
     // if var b = 7, 7 is displayed on the screen
       printB();
       toggle = 1;
-      console.log("a is now "+a);
     }
-    console.log("a= " + a);
-    console.log("b= "+ b);
-    console.log("toggle= "+ toggle);
-    console.log("total= "+total);
   })
 
   //if button8 is pressed, 8 to var
@@ -236,12 +202,7 @@ $(document).ready(function() {
     // if var b = 8, 8 is displayed on the screen
       printB();
       toggle = 1;
-      console.log("a is now "+a);
     }
-    console.log("a= " + a);
-    console.log("b= "+ b);
-    console.log("toggle= "+ toggle);
-    console.log("total= "+total);
   })
 
   //if button9 is pressed, 9 to var
@@ -265,12 +226,7 @@ $(document).ready(function() {
     // if var b = 9, 9 is displayed on the screen
       printB();
       toggle = 1;
-      console.log("a is now "+a);
     }
-    console.log("a= " + a);
-    console.log("b= "+ b);
-    console.log("toggle= "+ toggle);
-    console.log("total= "+total);
   })
 
   //if button0 is pressed, 0 to var
@@ -293,12 +249,7 @@ $(document).ready(function() {
       // if var b = 0, 0 is displayed on the screen
       printB();
       toggle = 1;
-      console.log("a is now "+a);
     }
-    console.log("a= " + a);
-    console.log("b= "+ b);
-    console.log("toggle= "+ toggle);
-    console.log("total= "+total);
   })
 
   //if decimal is pressed, . to var
@@ -322,12 +273,7 @@ $(document).ready(function() {
       // if var b = ., . is displayed on the screen
       printB();
       toggle = 1;
-      console.log("a is now "+a);
     }
-    console.log("a= " + a);
-    console.log("b= "+ b);
-    console.log("toggle= "+ toggle);
-    console.log("total= "+total);
   })
 
   //if plus sign button is pressed, 1 to equals function
@@ -415,9 +361,9 @@ $(document).ready(function() {
     toggle++;
 
     //Print total to screen
-    $('#total-display').html(function(){
-      return '<h2>'+total+'</h2>';
-    });
+    $('#total-display').html(function() {
+    return '<h2>'+total+'</h2>';
+    })
     return total = firstNum + secondNum;
   }
 
