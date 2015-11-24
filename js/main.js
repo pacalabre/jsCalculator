@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(document).ready(function() {
   var total = '';
   var a = '';
   var b = '';
@@ -18,19 +18,21 @@ $(document).ready(function(){
     //if toggle is zero, value is assigned to var a
     if (toggle === 0) {
     a = a+"1";
+    // if var a = 1, 1 is displayed on the screen
+    printA();
     //if toggle is equal to 1, value is assigned to var b
     } else if (toggle === 1) {
       b = b+"1";
-      // 0 is displayed upon screen load;
-    $('#total-display').html(function() {
-    return '<h2>'+b+'</h2>';
-    })
+    // if var b = 1, 1 is displayed on the screen
+    printB();
     // if toggle is greater than 1, var a is equal to the total,
     //new value is assigned to var b
     } else if (toggle > 1) {
       a = total;
       b='';
-      b=b+"1"
+      b=b+"1";
+    // if var b = 1, 1 is displayed on the screen
+      printB();
       toggle = 1;
     }
     console.log("a= " + a);
@@ -44,15 +46,21 @@ $(document).ready(function(){
     //if toggle is zero, value is assigned to var a
     if (toggle === 0) {
     a = a+"2";
+    // if var a = 2, 2 is displayed on the screen
+    printA();
     //if toggle is equal to 1, value is assigned to var b
     } else if (toggle === 1) {
       b = b+"2";
+    // if var b = 2, 2 is displayed on the screen
+    printB();
     // if toggle is greater than 1, var a is equal to the total,
     //new value is assigned to var b
     } else if (toggle > 1) {
       a = total;
       b ='';
       b = b + "2";
+    // if var b = 2, 2 is displayed on the screen
+      printB();
       toggle = 1;
       console.log("a is now "+a);
     }
@@ -67,15 +75,21 @@ $(document).ready(function(){
     //if toggle is zero, value is assigned to var a
     if (toggle === 0) {
     a = a+"3";
+    // if var a = 3, 3 is displayed on the screen
+    printA();
     //if toggle is equal to 1, value is assigned to var b
     } else if (toggle === 1) {
       b = b+"3";
+    // if var b = 3, 3 is displayed on the screen
+    printB();
     // if toggle is greater than 1, var a is equal to the total,
     //new value is assigned to var b
     } else if (toggle > 1) {
       a = total;
       b ='';
       b = b + "3";
+    // if var b = 3, 3 is displayed on the screen
+      printB();
       toggle = 1;
       console.log("a is now "+a);
     }
@@ -90,15 +104,21 @@ $(document).ready(function(){
     //if toggle is zero, value is assigned to var a
     if (toggle === 0) {
     a = a+"4";
+    // if var a = 4, 4 is displayed on the screen
+    printA();
     //if toggle is equal to 1, value is assigned to var b
     } else if (toggle === 1) {
       b = b+"4";
+    // if var b = 4, 4 is displayed on the screen
+    printB();
     // if toggle is greater than 1, var a is equal to the total,
     //new value is assigned to var b
     } else if (toggle > 1) {
       a = total;
       b ='';
       b = b + "4";
+    // if var b = 4, 4 is displayed on the screen
+      printB();
       toggle = 1;
       console.log("a is now "+a);
     }
@@ -113,15 +133,21 @@ $(document).ready(function(){
     //if toggle is zero, value is assigned to var a
     if (toggle === 0) {
     a = a+"5";
+    // if var a = 5, 5 is displayed on the screen
+    printA();
     //if toggle is equal to 1, value is assigned to var b
     } else if (toggle === 1) {
       b = b+"5";
+    // if var b = 5, 5 is displayed on the screen
+    printB();
     // if toggle is greater than 1, var a is equal to the total,
     //new value is assigned to var b
     } else if (toggle > 1) {
       a = total;
       b ='';
       b = b + "5";
+    // if var b = 5, 5 is displayed on the screen
+      printB();
       toggle = 1;
       console.log("a is now "+a);
     }
@@ -136,15 +162,21 @@ $(document).ready(function(){
     //if toggle is zero, value is assigned to var a
     if (toggle === 0) {
     a = a+"6";
+    // if var a = 6, 6 is displayed on the screen
+    printA();
     //if toggle is equal to 1, value is assigned to var b
     } else if (toggle === 1) {
       b = b+"6";
+    // if var b = 6, 6 is displayed on the screen
+    printB();
     // if toggle is greater than 1, var a is equal to the total,
     //new value is assigned to var b
     } else if (toggle > 1) {
       a = total;
       b ='';
       b = b + "6";
+    // if var b = 6, 6 is displayed on the screen
+      printB();
       toggle = 1;
       console.log("a is now "+a);
     }
@@ -159,15 +191,21 @@ $(document).ready(function(){
     //if toggle is zero, value is assigned to var a
     if (toggle === 0) {
     a = a+"7";
+    // if var a = 7, 7 is displayed on the screen
+    printA();
     //if toggle is equal to 1, value is assigned to var b
     } else if (toggle === 1) {
       b = b+"7";
+    // if var b = 7, 7 is displayed on the screen
+    printB();
     // if toggle is greater than 1, var a is equal to the total,
     //new value is assigned to var b
     } else if (toggle > 1) {
       a = total;
       b ='';
       b = b + "7";
+    // if var b = 7, 7 is displayed on the screen
+      printB();
       toggle = 1;
       console.log("a is now "+a);
     }
@@ -182,15 +220,21 @@ $(document).ready(function(){
     //if toggle is zero, value is assigned to var a
     if (toggle === 0) {
     a = a+"8";
+    // if var a = 8, 8 is displayed on the screen
+    printA();
     //if toggle is equal to 1, value is assigned to var b
     } else if (toggle === 1) {
       b = b+"8";
+    // if var b = 8, 8 is displayed on the screen
+      printB();
     // if toggle is greater than 1, var a is equal to the total,
     //new value is assigned to var b
     } else if (toggle > 1) {
       a = total;
       b ='';
       b = b + "8";
+    // if var b = 8, 8 is displayed on the screen
+      printB();
       toggle = 1;
       console.log("a is now "+a);
     }
@@ -204,16 +248,22 @@ $(document).ready(function(){
   $('#button9').mousedown(function() {
     //if toggle is zero, value is assigned to var a
     if (toggle === 0) {
+    // if var a = 9, 9 is displayed on the screen
     a = a+"9";
+    printA();
     //if toggle is equal to 1, value is assigned to var b
     } else if (toggle === 1) {
       b = b+"9";
+    // if var b = 9, 9 is displayed on the screen
+    printB();
     // if toggle is greater than 1, var a is equal to the total,
     //new value is assigned to var b
     } else if (toggle > 1) {
       a = total;
       b ='';
       b = b + "9";
+    // if var b = 9, 9 is displayed on the screen
+      printB();
       toggle = 1;
       console.log("a is now "+a);
     }
@@ -228,15 +278,20 @@ $(document).ready(function(){
     //if toggle is zero, value is assigned to var a
     if (toggle === 0) {
     a = a+"0";
+    printA();
     //if toggle is equal to 1, value is assigned to var b
     } else if (toggle === 1) {
       b = b+"0";
+      // if var b = 0, 0 is displayed on the screen
+      printB();
     // if toggle is greater than 1, var a is equal to the total,
     //new value is assigned to var b
     } else if (toggle > 1) {
       a = total;
       b = '';
       b = b + "0";
+      // if var b = 0, 0 is displayed on the screen
+      printB();
       toggle = 1;
       console.log("a is now "+a);
     }
@@ -251,15 +306,21 @@ $(document).ready(function(){
     //if toggle is zero, value is assigned to var a
     if (toggle === 0) {
     a = a+".";
+    // if var a = ., . is displayed on the screen
+    printA();
     //if toggle is equal to 1, value is assigned to var b
     } else if (toggle === 1) {
       b = b+".";
+      // if var b = ., . is displayed on the screen
+      printB();
     // if toggle is greater than 1, var a is equal to the total,
     //new value is assigned to var b
     } else if (toggle > 1) {
       a = total;
       b = '';
       b = b + ".";
+      // if var b = ., . is displayed on the screen
+      printB();
       toggle = 1;
       console.log("a is now "+a);
     }
@@ -300,6 +361,8 @@ $(document).ready(function(){
     total= 0;
     toggle = 0;
     operation = 0;
+
+    //Print total to screen
     $('#total-display').html(function() {
       return '<h2>'+total+'</h2>';
     })
@@ -323,6 +386,24 @@ $(document).ready(function(){
     }
   })
 
+//Functions
+
+  //print to screen functions
+
+  //print var a to screen
+  function printA() {
+    $('#total-display').html(function() {
+    return '<h2>'+a+'</h2>';
+    })
+  }
+
+  //print var b to screen
+  function printB() {
+    $('#total-display').html(function() {
+    return '<h2>'+b+'</h2>';
+    })
+  }
+
   //operational functions
 
   //addition function
@@ -332,6 +413,7 @@ $(document).ready(function(){
     var secondNum = parseFloat(b);
     total = firstNum + secondNum;
     toggle++;
+
     //Print total to screen
     $('#total-display').html(function(){
       return '<h2>'+total+'</h2>';
@@ -346,6 +428,7 @@ $(document).ready(function(){
     var secondNum = parseFloat(b);
     total = firstNum - secondNum;
     toggle++;
+
     //Print total to screen
     $('#total-display').html(function(){
       return '<h2>'+total+'</h2>';
@@ -360,6 +443,7 @@ $(document).ready(function(){
     var secondNum = parseFloat(b);
     total = firstNum * secondNum;
     toggle++;
+
     //Print total to screen
     $('#total-display').html(function(){
       return '<h2>'+total+'</h2>';
@@ -374,6 +458,7 @@ $(document).ready(function(){
     var secondNum = parseFloat(b);
     total = firstNum / secondNum;
     toggle++;
+
     //Print total to screen
     $('#total-display').html(function(){
       return '<h2>'+total+'</h2>';
