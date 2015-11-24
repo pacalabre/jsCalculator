@@ -49,8 +49,6 @@ $(document).ready(function() {
     } else if (toggle === 1) {
       b = b+"2";
     printB();
-    // if toggle is greater than 1, var a is equal to the total,
-    //new value is assigned to var b
     } else if (toggle > 1) {
       a = total;
       b ='';
@@ -68,8 +66,6 @@ $(document).ready(function() {
     } else if (toggle === 1) {
       b = b+"3";
     printB();
-    // if toggle is greater than 1, var a is equal to the total,
-    //new value is assigned to var b
     } else if (toggle > 1) {
       a = total;
       b ='';
@@ -87,8 +83,6 @@ $(document).ready(function() {
     } else if (toggle === 1) {
       b = b+"4";
     printB();
-    // if toggle is greater than 1, var a is equal to the total,
-    //new value is assigned to var b
     } else if (toggle > 1) {
       a = total;
       b ='';
@@ -106,8 +100,6 @@ $(document).ready(function() {
     } else if (toggle === 1) {
       b = b+"5";
     printB();
-    // if toggle is greater than 1, var a is equal to the total,
-    //new value is assigned to var b
     } else if (toggle > 1) {
       a = total;
       b ='';
@@ -125,8 +117,6 @@ $(document).ready(function() {
     } else if (toggle === 1) {
       b = b+"6";
     printB();
-    // if toggle is greater than 1, var a is equal to the total,
-    //new value is assigned to var b
     } else if (toggle > 1) {
       a = total;
       b ='';
@@ -144,8 +134,6 @@ $(document).ready(function() {
     } else if (toggle === 1) {
       b = b+"7";
     printB();
-    // if toggle is greater than 1, var a is equal to the total,
-    //new value is assigned to var b
     } else if (toggle > 1) {
       a = total;
       b ='';
@@ -163,8 +151,6 @@ $(document).ready(function() {
     } else if (toggle === 1) {
       b = b+"8";
       printB();
-    // if toggle is greater than 1, var a is equal to the total,
-    //new value is assigned to var b
     } else if (toggle > 1) {
       a = total;
       b ='';
@@ -182,8 +168,6 @@ $(document).ready(function() {
     } else if (toggle === 1) {
       b = b+"9";
     printB();
-    // if toggle is greater than 1, var a is equal to the total,
-    //new value is assigned to var b
     } else if (toggle > 1) {
       a = total;
       b ='';
@@ -201,8 +185,6 @@ $(document).ready(function() {
     } else if (toggle === 1) {
       b = b+"0";
       printB();
-    // if toggle is greater than 1, var a is equal to the total,
-    //new value is assigned to var b
     } else if (toggle > 1) {
       a = total;
       b = '';
@@ -220,8 +202,6 @@ $(document).ready(function() {
     } else if (toggle === 1) {
       b = b+".";
       printB();
-    // if toggle is greater than 1, var a is equal to the total,
-    //new value is assigned to var b
     } else if (toggle > 1) {
       a = total;
       b = '';
