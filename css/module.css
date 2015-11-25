@@ -1,0 +1,51 @@
+
+button {
+  background-color: #303030;
+  font-family: Yantramanav;
+  font-weight: 100;
+  border-radius: 50%;
+  border-width: thin;
+  margin:5px;
+  height:50px;
+  width:50px;
+  color: white;
+}
+
+.title {
+  font-family: quicksand;
+  font-size: 70px;
+  margin-top: 80px;
+  text-align: center;
+}
+
+.calculator {
+  border: solid;
+}
+
+.total-display {
+  border: thin solid;
+  border-radius: 4%;
+  margin: 5% 15%;
+  background-color: white;
+}
+
+.total-display h2 {
+  opacity: 1;
+  color: black;
+  font-family: Yantramanav;
+  font-weight: 400;
+  font-size: 30px;
+  padding: 1px 5px;
+}
+
+.calculator {
+  margin: 2em auto 2% auto;
+  height: 390px;
+  width: 300px;
+  background-color: #a5adb0;
+}
+
+.buttons {
+  margin: 10% auto 0px 8%;
+  color: white;
+}
