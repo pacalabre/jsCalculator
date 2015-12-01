@@ -1,4 +1,4 @@
-$(document).ready(function() {
+ $(document).ready(function() {
   var total = '';
   var a = '';
   var b = '';
@@ -14,207 +14,363 @@ $(document).ready(function() {
 
 // Button Assignments
 
-  /* All of the button assignments will follow the logic of button1.
-  I have overcommented button1 for future reference */
-
-  //if button1 is pressed, 1 to var
   $('#button1').mousedown(function(){
-    //if toggle is zero, value is assigned to var a
-    if (toggle === 0) {
-    a = a+"1";
-    // if var a = 1, 1 is displayed on the screen
-    printA();
-    //if toggle is equal to 1, value is assigned to var b
-    } else if (toggle === 1) {
+    if(toggle === 0){
+      a = a+"1";
+      printA();
+      console.log("a= " + a);
+-     console.log("b= "+ b);
+-     console.log("toggle= "+ toggle);
+-     console.log("total= "+total);
+    } else if(toggle === 1) {
       b = b+"1";
-    // if var b = 1, 1 is displayed on the screen
-    printB();
-    // if toggle is greater than 1, var a is equal to the total,
-    //new value is assigned to var b
-    } else if (toggle > 1) {
-      a = total;
+      printB();
+      console.log("a= " + a);
+-     console.log("b= "+ b);
+-     console.log("toggle= "+ toggle);
+-     console.log("total= "+total);
+    } else if(toggle === 2){
+      a ='';
+      a = a+"1";
       b='';
-      b=b+"1";
-    // if var b = 1, 1 is displayed on the screen
-      printB();
-      toggle = 1;
+      toggle = 0;
+      printA();
+      console.log("a= " + a);
+-     console.log("b= "+ b);
+-     console.log("toggle= "+ toggle);
+-     console.log("total= "+total);
+    } else if( toggle === 3) {
+      a = total;
+      b = "1";
+      console.log("a= " + a);
+-     console.log("b= "+ b);
+-     console.log("toggle= "+ toggle);
+-     console.log("total= "+total);
     }
   })
 
-  //if button2 is pressed, 2 to var
-  $('#button2').mousedown(function() {
-    if (toggle === 0) {
-    a = a+"2";
-    printA();
-    } else if (toggle === 1) {
+  $('#button2').mousedown(function(){
+    if(toggle === 0){
+      a = a+"2";
+      printA();
+      console.log("a= " + a);
+-     console.log("b= "+ b);
+-     console.log("toggle= "+ toggle);
+-     console.log("total= "+total);
+    } else if(toggle === 1) {
       b = b+"2";
-    printB();
-    } else if (toggle > 1) {
-      a = total;
-      b ='';
-      b = b + "2";
       printB();
-      toggle = 1;
+      console.log("a= " + a);
+-     console.log("b= "+ b);
+-     console.log("toggle= "+ toggle);
+-     console.log("total= "+total);
+    } else if(toggle === 2){
+      a ='';
+      a = a+"2";
+      b='';
+      toggle = 0;
+      printA();
+      console.log("a= " + a);
+-     console.log("b= "+ b);
+-     console.log("toggle= "+ toggle);
+-     console.log("total= "+total);
+    } else if( toggle === 3) {
+      a = total;
+      b = "2";
+      console.log("a= " + a);
+-     console.log("b= "+ b);
+-     console.log("toggle= "+ toggle);
+-     console.log("total= "+total);
     }
   })
 
-  //if button3 is pressed, 3 to var
-  $('#button3').mousedown(function() {
-    if (toggle === 0) {
-    a = a+"3";
-    printA();
-    } else if (toggle === 1) {
+  $('#button3').mousedown(function(){
+    if(toggle === 0){
+      a = a+"3";
+      printA();
+      console.log("a= " + a);
+-     console.log("b= "+ b);
+-     console.log("toggle= "+ toggle);
+-     console.log("total= "+total);
+    } else if(toggle === 1) {
       b = b+"3";
-    printB();
-    } else if (toggle > 1) {
-      a = total;
-      b ='';
-      b = b + "3";
       printB();
-      toggle = 1;
+      console.log("a= " + a);
+-     console.log("b= "+ b);
+-     console.log("toggle= "+ toggle);
+-     console.log("total= "+total);
+    } else if(toggle === 2){
+      a ='';
+      a = a+"3";
+      b='';
+      toggle = 0;
+      printA();
+      console.log("a= " + a);
+-     console.log("b= "+ b);
+-     console.log("toggle= "+ toggle);
+-     console.log("total= "+total);
+    } else if( toggle === 3) {
+      a = total;
+      b = "3";
+      console.log("a= " + a);
+-     console.log("b= "+ b);
+-     console.log("toggle= "+ toggle);
+-     console.log("total= "+total);
     }
   })
 
-  //if button4 is pressed, 4 to var
-  $('#button4').mousedown(function() {
-    if (toggle === 0) {
-    a = a+"4";
-    printA();
-    } else if (toggle === 1) {
+  $('#button4').mousedown(function(){
+    if(toggle === 0){
+      a = a+"4";
+      printA();
+      console.log("a= " + a);
+-     console.log("b= "+ b);
+-     console.log("toggle= "+ toggle);
+-     console.log("total= "+total);
+    } else if(toggle === 1) {
       b = b+"4";
-    printB();
-    } else if (toggle > 1) {
-      a = total;
-      b ='';
-      b = b + "4";
       printB();
-      toggle = 1;
+      console.log("a= " + a);
+-     console.log("b= "+ b);
+-     console.log("toggle= "+ toggle);
+-     console.log("total= "+total);
+    } else if(toggle === 2){
+      a ='';
+      a = a+"4";
+      b='';
+      toggle = 0;
+      printA();
+      console.log("a= " + a);
+-     console.log("b= "+ b);
+-     console.log("toggle= "+ toggle);
+-     console.log("total= "+total);
+    } else if( toggle === 3) {
+      a = total;
+      b = "4";
+      console.log("a= " + a);
+-     console.log("b= "+ b);
+-     console.log("toggle= "+ toggle);
+-     console.log("total= "+total);
     }
   })
 
-  //if button5 is pressed, 5 to var
-  $('#button5').mousedown(function() {
-    if (toggle === 0) {
-    a = a+"5";
-    printA();
-    } else if (toggle === 1) {
+  $('#button5').mousedown(function(){
+    if(toggle === 0){
+      a = a+"5";
+      printA();
+      console.log("a= " + a);
+-     console.log("b= "+ b);
+-     console.log("toggle= "+ toggle);
+-     console.log("total= "+total);
+    } else if(toggle === 1) {
       b = b+"5";
-    printB();
-    } else if (toggle > 1) {
-      a = total;
-      b ='';
-      b = b + "5";
       printB();
-      toggle = 1;
+      console.log("a= " + a);
+-     console.log("b= "+ b);
+-     console.log("toggle= "+ toggle);
+-     console.log("total= "+total);
+    } else if(toggle === 2){
+      a ='';
+      a = a+"5";
+      b='';
+      toggle = 0;
+      printA();
+      console.log("a= " + a);
+-     console.log("b= "+ b);
+-     console.log("toggle= "+ toggle);
+-     console.log("total= "+total);
+    } else if( toggle === 3) {
+      a = total;
+      b = "5";
+      console.log("a= " + a);
+-     console.log("b= "+ b);
+-     console.log("toggle= "+ toggle);
+-     console.log("total= "+total);
     }
   })
 
-  //if button6 is pressed, 6 to var
-  $('#button6').mousedown(function() {
-    if (toggle === 0) {
-    a = a+"6";
-    printA();
-    } else if (toggle === 1) {
+  $('#button6').mousedown(function(){
+    if(toggle === 0){
+      a = a+"6";
+      printA();
+      console.log("a= " + a);
+-     console.log("b= "+ b);
+-     console.log("toggle= "+ toggle);
+-     console.log("total= "+total);
+    } else if(toggle === 1) {
       b = b+"6";
-    printB();
-    } else if (toggle > 1) {
-      a = total;
-      b ='';
-      b = b + "6";
       printB();
-      toggle = 1;
+      console.log("a= " + a);
+-     console.log("b= "+ b);
+-     console.log("toggle= "+ toggle);
+-     console.log("total= "+total);
+    } else if(toggle === 2){
+      a ='';
+      a = a+"6";
+      b='';
+      toggle = 0;
+      printA();
+      console.log("a= " + a);
+-     console.log("b= "+ b);
+-     console.log("toggle= "+ toggle);
+-     console.log("total= "+total);
+    } else if( toggle === 3) {
+      a = total;
+      b = "6";
+      console.log("a= " + a);
+-     console.log("b= "+ b);
+-     console.log("toggle= "+ toggle);
+-     console.log("total= "+total);
     }
   })
 
-  //if button7 is pressed, 7 to var
-  $('#button7').mousedown(function() {
-    if (toggle === 0) {
-    a = a+"7";
-    printA();
-    } else if (toggle === 1) {
-      b = b+"7";
-    printB();
-    } else if (toggle > 1) {
-      a = total;
-      b ='';
-      b = b + "7";
-      printB();
-      toggle = 1;
-    }
-  })
+  $('#button7').mousedown(function(){
+      if(toggle === 0){
+        a = a+"7";
+        printA();
+        console.log("a= " + a);
+  -     console.log("b= "+ b);
+  -     console.log("toggle= "+ toggle);
+  -     console.log("total= "+total);
+      } else if(toggle === 1) {
+        b = b+"7";
+        printB();
+        console.log("a= " + a);
+  -     console.log("b= "+ b);
+  -     console.log("toggle= "+ toggle);
+  -     console.log("total= "+total);
+      } else if(toggle === 2){
+        a ='';
+        a = a+"7";
+        b='';
+        toggle = 0;
+        printA();
+        console.log("a= " + a);
+  -     console.log("b= "+ b);
+  -     console.log("toggle= "+ toggle);
+  -     console.log("total= "+total);
+      } else if( toggle === 3) {
+        a = total;
+        b = "7";
+        console.log("a= " + a);
+  -     console.log("b= "+ b);
+  -     console.log("toggle= "+ toggle);
+  -     console.log("total= "+total);
+      }
+    })
 
-  //if button8 is pressed, 8 to var
-  $('#button8').mousedown(function() {
-    if (toggle === 0) {
-    a = a+"8";
-    printA();
-    } else if (toggle === 1) {
+    $('#button8').mousedown(function(){
+    if(toggle === 0){
+      a = a+"8";
+      printA();
+      console.log("a= " + a);
+-     console.log("b= "+ b);
+-     console.log("toggle= "+ toggle);
+-     console.log("total= "+total);
+    } else if(toggle === 1) {
       b = b+"8";
       printB();
-    } else if (toggle > 1) {
+      console.log("a= " + a);
+-     console.log("b= "+ b);
+-     console.log("toggle= "+ toggle);
+-     console.log("total= "+total);
+    } else if(toggle === 2){
+      a ='';
+      a = a+"8";
+      b='';
+      toggle = 0;
+      printA();
+      console.log("a= " + a);
+-     console.log("b= "+ b);
+-     console.log("toggle= "+ toggle);
+-     console.log("total= "+total);
+    } else if( toggle === 3) {
       a = total;
-      b ='';
-      b = b + "8";
-      printB();
-      toggle = 1;
+      b = "8";
+      console.log("a= " + a);
+-     console.log("b= "+ b);
+-     console.log("toggle= "+ toggle);
+-     console.log("total= "+total);
     }
   })
-
-  //if button9 is pressed, 9 to var
-  $('#button9').mousedown(function() {
-    if (toggle === 0) {
-    a = a+"9";
-    printA();
-    } else if (toggle === 1) {
+    $('#button9').mousedown(function(){
+    if(toggle === 0){
+      a = a+"9";
+      printA();
+      console.log("a= " + a);
+-     console.log("b= "+ b);
+-     console.log("toggle= "+ toggle);
+-     console.log("total= "+total);
+    } else if(toggle === 1) {
       b = b+"9";
-    printB();
-    } else if (toggle > 1) {
-      a = total;
-      b ='';
-      b = b + "9";
       printB();
-      toggle = 1;
+      console.log("a= " + a);
+-     console.log("b= "+ b);
+-     console.log("toggle= "+ toggle);
+-     console.log("total= "+total);
+    } else if(toggle === 2){
+      a ='';
+      a = a+"9";
+      b='';
+      toggle = 0;
+      printA();
+      console.log("a= " + a);
+-     console.log("b= "+ b);
+-     console.log("toggle= "+ toggle);
+-     console.log("total= "+total);
+    } else if( toggle === 3) {
+      a = total;
+      b = "9";
+      console.log("a= " + a);
+-     console.log("b= "+ b);
+-     console.log("toggle= "+ toggle);
+-     console.log("total= "+total);
     }
   })
-
-  //if button0 is pressed, 0 to var
-  $('#button0').mousedown(function() {
-    if (toggle === 0) {
-    a = a+"0";
-    printA();
-    } else if (toggle === 1) {
+    $('#button0').mousedown(function(){
+    if(toggle === 0){
+      a = a+"0";
+      printA();
+      console.log("a= " + a);
+-     console.log("b= "+ b);
+-     console.log("toggle= "+ toggle);
+-     console.log("total= "+total);
+    } else if(toggle === 1) {
       b = b+"0";
       printB();
-    } else if (toggle > 1) {
+      console.log("a= " + a);
+-     console.log("b= "+ b);
+-     console.log("toggle= "+ toggle);
+-     console.log("total= "+total);
+    } else if(toggle === 2){
+      a ='';
+      a = a+"0";
+      b='';
+      toggle = 0;
+      printA();
+      console.log("a= " + a);
+-     console.log("b= "+ b);
+-     console.log("toggle= "+ toggle);
+-     console.log("total= "+total);
+    } else if( toggle === 3) {
       a = total;
-      b = '';
-      b = b + "0";
-      printB();
-      toggle = 1;
+      b = "0";
+      console.log("a= " + a);
+-     console.log("b= "+ b);
+-     console.log("toggle= "+ toggle);
+-     console.log("total= "+total);
     }
   })
 
-  //if decimal is pressed, . to var
-  $('#decimal').mousedown(function() {
-    if (toggle === 0) {
-    a = a+".";
-    printA();
-    } else if (toggle === 1) {
-      b = b+".";
-      printB();
-    } else if (toggle > 1) {
-      a = total;
-      b = '';
-      b = b + ".";
-      printB();
-      toggle = 1;
-    }
-  })
 
   //if plus sign button is pressed, 1 to equals function
   $('#add').mousedown(function() {
     toggle ++;
     operation = +1;
+    console.log("a ="+a);
+    console.log("b ="+b);
+    console.log("toggle ="+ toggle);
+    console.log("total =" + total);
   })
 
   //if minus sign button is pressed, 2 to equals function
@@ -254,7 +410,7 @@ $(document).ready(function() {
   $('#equals').mousedown(function() {
     var firstNum = parseFloat(a);
     var secondNum = parseFloat(b);
-    toggle ++;
+    toggle =+1;
 
     if (operation === 1) {
      total = add(firstNum,secondNum);
@@ -265,6 +421,10 @@ $(document).ready(function() {
     } else if ( operation === 4 ) {
       total = multiply(firstNum,secondNum);
     }
+    console.log("a= " + a);
+-   console.log("b= "+ b);
+-   console.log("toggle= "+ toggle);
+-   console.log("total= "+total);
   })
 
 //Functions
@@ -287,8 +447,8 @@ $(document).ready(function() {
 
   function add(a,b) {
     var total = 0;
-    var firstNum = parseFloat(a);
-    var secondNum = parseFloat(b);
+    var firstNum = a;
+    var secondNum = b;
     total = firstNum + secondNum;
     toggle++;
 
