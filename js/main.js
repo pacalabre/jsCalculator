@@ -18,34 +18,26 @@
     if(toggle === 0){
       a = a+"1";
       printA();
-      console.log("a= " + a);
--     console.log("b= "+ b);
--     console.log("toggle= "+ toggle);
--     console.log("total= "+total);
+      /* After an operator button is pressed (which increases toggle by 1), if 1 is pressed again
+      it goes to var b. */
     } else if(toggle === 1) {
       b = b+"1";
       printB();
-      console.log("a= " + a);
--     console.log("b= "+ b);
--     console.log("toggle= "+ toggle);
--     console.log("total= "+total);
+      /* If toggle is 2, which would happen after pressing the equals button, if 1 is pressed again
+      the variable assignment goes to var a. */
     } else if(toggle === 2){
       a ='';
       a = a+"1";
       b='';
       toggle = 0;
       printA();
-      console.log("a= " + a);
--     console.log("b= "+ b);
--     console.log("toggle= "+ toggle);
--     console.log("total= "+total);
+      /* If toggle is 3, which would happen if after pressing the equals sign, you press another
+      operation button, variable a would take on the total and the new var assignent would go
+      to var b*/
     } else if( toggle === 3) {
       a = total;
       b = "1";
-      console.log("a= " + a);
--     console.log("b= "+ b);
--     console.log("toggle= "+ toggle);
--     console.log("total= "+total);
+      printB();
     }
   })
 
@@ -77,6 +69,7 @@
     } else if( toggle === 3) {
       a = total;
       b = "2";
+      printB();
       console.log("a= " + a);
 -     console.log("b= "+ b);
 -     console.log("toggle= "+ toggle);
@@ -112,6 +105,7 @@
     } else if( toggle === 3) {
       a = total;
       b = "3";
+      printB();
       console.log("a= " + a);
 -     console.log("b= "+ b);
 -     console.log("toggle= "+ toggle);
@@ -147,6 +141,7 @@
     } else if( toggle === 3) {
       a = total;
       b = "4";
+      printB();
       console.log("a= " + a);
 -     console.log("b= "+ b);
 -     console.log("toggle= "+ toggle);
@@ -182,6 +177,7 @@
     } else if( toggle === 3) {
       a = total;
       b = "5";
+      printB();
       console.log("a= " + a);
 -     console.log("b= "+ b);
 -     console.log("toggle= "+ toggle);
@@ -217,6 +213,7 @@
     } else if( toggle === 3) {
       a = total;
       b = "6";
+      printB();
       console.log("a= " + a);
 -     console.log("b= "+ b);
 -     console.log("toggle= "+ toggle);
@@ -252,6 +249,7 @@
       } else if( toggle === 3) {
         a = total;
         b = "7";
+        printB();
         console.log("a= " + a);
   -     console.log("b= "+ b);
   -     console.log("toggle= "+ toggle);
@@ -287,6 +285,7 @@
     } else if( toggle === 3) {
       a = total;
       b = "8";
+      printB();
       console.log("a= " + a);
 -     console.log("b= "+ b);
 -     console.log("toggle= "+ toggle);
@@ -321,6 +320,7 @@
     } else if( toggle === 3) {
       a = total;
       b = "9";
+      printB();
       console.log("a= " + a);
 -     console.log("b= "+ b);
 -     console.log("toggle= "+ toggle);
@@ -355,6 +355,7 @@
     } else if( toggle === 3) {
       a = total;
       b = "0";
+      printB();
       console.log("a= " + a);
 -     console.log("b= "+ b);
 -     console.log("toggle= "+ toggle);
