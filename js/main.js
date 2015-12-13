@@ -3,6 +3,7 @@
   var a = '';
   var b = '';
   var toggle = 0;
+  var timesOperationButtonClicked = 0;
   var operation = 0;
 
   //on load, show total as zero
@@ -14,31 +15,54 @@
 
 // Button Assignments
 
-  $('#button1').mousedown(function(){
+  $('#button1').mousedown(function() {
+    /* Toggle starts at 0, so the first string of numbers gets assigned to var a */
     if(toggle === 0){
       a = a+"1";
       printA();
       /* After an operator button is pressed (which increases toggle by 1), if 1 is pressed again
       it goes to var b. */
-    } else if(toggle === 1) {
-      b = b+"1";
-      printB();
+    } else if (toggle === 1) {
+
+      if (timesOperationButtonClicked > 1){
+          console.log("this happened");
+          equals();
+          a = total;
+          b = "1";
+      } else {
+        b = "1";
+        printB();
+      }
+
       /* If toggle is 2, which would happen after pressing the equals button, if 1 is pressed again
       the variable assignment goes to var a. */
-    } else if(toggle === 2){
+    } else if (toggle === 2) {
+      console.log("this happened2");
+      if (timesOperationButtonClicked > 1) {
+          equals();
+          a = total;
+          b = "1";
+          toggle = 2;
+      } else {
       a ='';
       a = a+"1";
       b='';
       toggle = 0;
       printA();
+    }
+
       /* If toggle is 3, which would happen if after pressing the equals sign, you press another
       operation button, variable a would take on the total and the new var assignent would go
       to var b*/
-    } else if( toggle === 3) {
+    } else if( toggle <= 3) {
+      if (timesOperationButtonClicked > 1) {
+        toggle = 1;
+      }
       a = total;
       b = "1";
       printB();
     }
+
   })
 
   $('#button2').mousedown(function(){
@@ -367,11 +391,8 @@
   //if plus sign button is pressed, 1 to equals function
   $('#add').mousedown(function() {
     toggle ++;
+    timesOperationButtonClicked ++;
     operation = +1;
-    console.log("a ="+a);
-    console.log("b ="+b);
-    console.log("toggle ="+ toggle);
-    console.log("total =" + total);
   })
 
   //if minus sign button is pressed, 2 to equals function
@@ -409,23 +430,14 @@
 
   //if equals sign is pressed, run selected operator
   $('#equals').mousedown(function() {
-    var firstNum = parseFloat(a);
-    var secondNum = parseFloat(b);
     toggle =+1;
-
-    if (operation === 1) {
-     total = add(firstNum,secondNum);
-    } else if ( operation === 2) {
-     total = subtract(firstNum,secondNum);
-    } else if (operation === 3) {
-      total = divide(firstNum,secondNum);
-    } else if ( operation === 4 ) {
-      total = multiply(firstNum,secondNum);
-    }
+    equals();
+    console.log("timesOperationButtonClicked = "+timesOperationButtonClicked);
     console.log("a= " + a);
 -   console.log("b= "+ b);
 -   console.log("toggle= "+ toggle);
 -   console.log("total= "+total);
+    timesOperationButtonClicked = 0;
   })
 
 //Functions
@@ -442,6 +454,25 @@
     $('#total-display').html(function() {
     return '<h2>'+b+'</h2>';
     })
+  }
+
+  function equals() {
+    var firstNum = parseFloat(a);
+    var secondNum = parseFloat(b);
+
+    if (operation === 1) {
+     total = add(firstNum,secondNum);
+    } else if ( operation === 2) {
+     total = subtract(firstNum,secondNum);
+    } else if (operation === 3) {
+      total = divide(firstNum,secondNum);
+    } else if ( operation === 4 ) {
+      total = multiply(firstNum,secondNum);
+    }
+    console.log("a= " + a);
+-   console.log("b= "+ b);
+-   console.log("toggle= "+ toggle);
+-   console.log("total= "+total);
   }
 
   //operational functions
