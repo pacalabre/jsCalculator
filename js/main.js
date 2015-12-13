@@ -15,89 +15,76 @@
 
 // Button Assignments
 
-  $('#button1').mousedown(function() {
-    /* Toggle starts at 0, so the first string of numbers gets assigned to var a */
+  $('#button1').mousedown(function(){
     if(toggle === 0){
+      console.log("this happened 1");
       a = a+"1";
       printA();
       /* After an operator button is pressed (which increases toggle by 1), if 1 is pressed again
       it goes to var b. */
-    } else if (toggle === 1) {
-
-      if (timesOperationButtonClicked > 1){
-          console.log("this happened");
-          equals();
-          a = total;
-          b = "1";
-      } else {
-        b = "1";
-        printB();
-      }
-
+    } else if(toggle === 1) {
+      console.log("this happened 2");
+      b = b+"1";
+      printB();
       /* If toggle is 2, which would happen after pressing the equals button, if 1 is pressed again
       the variable assignment goes to var a. */
-    } else if (toggle === 2) {
-      console.log("this happened2");
-      if (timesOperationButtonClicked > 1) {
-          equals();
-          a = total;
-          b = "1";
-          toggle = 1;
-      } else {
+    } else if(toggle === 2){
+      console.log("this happened 3");
       a ='';
       a = a+"1";
       b='';
       toggle = 0;
       printA();
-    }
-
       /* If toggle is 3, which would happen if after pressing the equals sign, you press another
       operation button, variable a would take on the total and the new var assignent would go
       to var b*/
-    } else if( toggle <= 3) {
-      if (timesOperationButtonClicked > 1) {
-        toggle = 1;
-      }
+    } else if( toggle === 3) {
+      console.log("this happened 4");
       a = total;
-      b = "1";
+      b = '';
+      b= b+1;
       printB();
-    }
+      toggle = 1;
 
+    }
   })
+
 
   $('#button2').mousedown(function(){
     if(toggle === 0){
       a = a+"2";
       printA();
-      console.log("a= " + a);
--     console.log("b= "+ b);
--     console.log("toggle= "+ toggle);
--     console.log("total= "+total);
     } else if(toggle === 1) {
-      b = b+"2";
-      printB();
-      console.log("a= " + a);
--     console.log("b= "+ b);
--     console.log("toggle= "+ toggle);
--     console.log("total= "+total);
+
+      if (timesOperationButtonClicked > 1){
+          equals();
+          a = total;
+          b = "2";
+      } else {
+        b = "2";
+        printB();
+      }
+
     } else if(toggle === 2){
+
+      if (timesOperationButtonClicked > 1) {
+          equals();
+          a = total;
+          b = "2";
+          toggle = 1;
+      } else {
       a ='';
       a = a+"2";
       b='';
       toggle = 0;
       printA();
-      console.log("a= " + a);
--     console.log("b= "+ b);
--     console.log("toggle= "+ toggle);
--     console.log("total= "+total);
+      }
+
     } else if( toggle === 3) {
       a = total;
       b = "2";
       printB();
-      console.log("a= " + a);
--     console.log("b= "+ b);
--     console.log("toggle= "+ toggle);
--     console.log("total= "+total);
+
     }
   })
 
@@ -105,35 +92,35 @@
     if(toggle === 0){
       a = a+"3";
       printA();
-      console.log("a= " + a);
--     console.log("b= "+ b);
--     console.log("toggle= "+ toggle);
--     console.log("total= "+total);
     } else if(toggle === 1) {
-      b = b+"3";
-      printB();
-      console.log("a= " + a);
--     console.log("b= "+ b);
--     console.log("toggle= "+ toggle);
--     console.log("total= "+total);
+      if (timesOperationButtonClicked > 1){
+          equals();
+          a = total;
+          b = "3";
+      } else {
+        b = "3";
+        printB();
+      }
+
     } else if(toggle === 2){
+      if (timesOperationButtonClicked > 1) {
+          equals();
+          a = total;
+          b = "3";
+          toggle = 1;
+      } else {
       a ='';
       a = a+"3";
       b='';
       toggle = 0;
       printA();
-      console.log("a= " + a);
--     console.log("b= "+ b);
--     console.log("toggle= "+ toggle);
--     console.log("total= "+total);
+    }
+
     } else if( toggle === 3) {
       a = total;
       b = "3";
       printB();
-      console.log("a= " + a);
--     console.log("b= "+ b);
--     console.log("toggle= "+ toggle);
--     console.log("total= "+total);
+
     }
   })
 
@@ -141,35 +128,36 @@
     if(toggle === 0){
       a = a+"4";
       printA();
-      console.log("a= " + a);
--     console.log("b= "+ b);
--     console.log("toggle= "+ toggle);
--     console.log("total= "+total);
+
     } else if(toggle === 1) {
-      b = b+"4";
-      printB();
-      console.log("a= " + a);
--     console.log("b= "+ b);
--     console.log("toggle= "+ toggle);
--     console.log("total= "+total);
+      if (timesOperationButtonClicked > 1) {
+          equals();
+          a = total;
+          b = "4";
+      } else {
+        b = "4";
+        printB();
+      }
+
     } else if(toggle === 2){
+
+      if (timesOperationButtonClicked > 1) {
+          equals();
+          a = total;
+          b = "4";
+          toggle = 1;
+      } else {
       a ='';
       a = a+"4";
       b='';
       toggle = 0;
       printA();
-      console.log("a= " + a);
--     console.log("b= "+ b);
--     console.log("toggle= "+ toggle);
--     console.log("total= "+total);
+    }
+
     } else if( toggle === 3) {
       a = total;
       b = "4";
       printB();
-      console.log("a= " + a);
--     console.log("b= "+ b);
--     console.log("toggle= "+ toggle);
--     console.log("total= "+total);
     }
   })
 
@@ -177,35 +165,38 @@
     if(toggle === 0){
       a = a+"5";
       printA();
-      console.log("a= " + a);
--     console.log("b= "+ b);
--     console.log("toggle= "+ toggle);
--     console.log("total= "+total);
+
     } else if(toggle === 1) {
-      b = b+"5";
-      printB();
-      console.log("a= " + a);
--     console.log("b= "+ b);
--     console.log("toggle= "+ toggle);
--     console.log("total= "+total);
+
+      if (timesOperationButtonClicked > 1) {
+          equals();
+          a = total;
+          b = "5";
+      } else {
+        b = "5";
+        printB();
+      }
+
     } else if(toggle === 2){
+
+      if (timesOperationButtonClicked > 1) {
+          equals();
+          a = total;
+          b = "5";
+          toggle = 1;
+      } else {
       a ='';
       a = a+"5";
       b='';
       toggle = 0;
       printA();
-      console.log("a= " + a);
--     console.log("b= "+ b);
--     console.log("toggle= "+ toggle);
--     console.log("total= "+total);
+    }
+
     } else if( toggle === 3) {
       a = total;
       b = "5";
       printB();
-      console.log("a= " + a);
--     console.log("b= "+ b);
--     console.log("toggle= "+ toggle);
--     console.log("total= "+total);
+
     }
   })
 
@@ -213,35 +204,38 @@
     if(toggle === 0){
       a = a+"6";
       printA();
-      console.log("a= " + a);
--     console.log("b= "+ b);
--     console.log("toggle= "+ toggle);
--     console.log("total= "+total);
+
     } else if(toggle === 1) {
-      b = b+"6";
-      printB();
-      console.log("a= " + a);
--     console.log("b= "+ b);
--     console.log("toggle= "+ toggle);
--     console.log("total= "+total);
+
+      if (timesOperationButtonClicked > 1) {
+          equals();
+          a = total;
+          b = "6";
+      } else {
+        b = "6";
+        printB();
+      }
+
     } else if(toggle === 2){
+
+      if (timesOperationButtonClicked > 1) {
+          equals();
+          a = total;
+          b = "6";
+          toggle = 1;
+      } else {
       a ='';
       a = a+"6";
       b='';
       toggle = 0;
       printA();
-      console.log("a= " + a);
--     console.log("b= "+ b);
--     console.log("toggle= "+ toggle);
--     console.log("total= "+total);
+    }
+
     } else if( toggle === 3) {
       a = total;
       b = "6";
       printB();
-      console.log("a= " + a);
--     console.log("b= "+ b);
--     console.log("toggle= "+ toggle);
--     console.log("total= "+total);
+
     }
   })
 
@@ -249,35 +243,37 @@
       if(toggle === 0){
         a = a+"7";
         printA();
-        console.log("a= " + a);
-  -     console.log("b= "+ b);
-  -     console.log("toggle= "+ toggle);
-  -     console.log("total= "+total);
+
       } else if(toggle === 1) {
-        b = b+"7";
+
+        if (timesOperationButtonClicked > 1) {
+          equals();
+          a = total;
+          b = "7";
+      } else {
+        b = "7";
         printB();
-        console.log("a= " + a);
-  -     console.log("b= "+ b);
-  -     console.log("toggle= "+ toggle);
-  -     console.log("total= "+total);
+      }
+
       } else if(toggle === 2){
-        a ='';
-        a = a+"7";
-        b='';
-        toggle = 0;
-        printA();
-        console.log("a= " + a);
-  -     console.log("b= "+ b);
-  -     console.log("toggle= "+ toggle);
-  -     console.log("total= "+total);
+        if (timesOperationButtonClicked > 1) {
+          equals();
+          a = total;
+          b = "7";
+          toggle = 1;
+      } else {
+      a ='';
+      a = a+"7";
+      b='';
+      toggle = 0;
+      printA();
+    }
+
       } else if( toggle === 3) {
         a = total;
         b = "7";
         printB();
-        console.log("a= " + a);
-  -     console.log("b= "+ b);
-  -     console.log("toggle= "+ toggle);
-  -     console.log("total= "+total);
+
       }
     })
 
@@ -285,105 +281,113 @@
     if(toggle === 0){
       a = a+"8";
       printA();
-      console.log("a= " + a);
--     console.log("b= "+ b);
--     console.log("toggle= "+ toggle);
--     console.log("total= "+total);
+
     } else if(toggle === 1) {
-      b = b+"8";
-      printB();
-      console.log("a= " + a);
--     console.log("b= "+ b);
--     console.log("toggle= "+ toggle);
--     console.log("total= "+total);
+
+      if (timesOperationButtonClicked > 1) {
+          equals();
+          a = total;
+          b = "8";
+      } else {
+        b = "8";
+        printB();
+      }
+
     } else if(toggle === 2){
+
+       if (timesOperationButtonClicked > 1) {
+          equals();
+          a = total;
+          b = "8";
+          toggle = 1;
+      } else {
       a ='';
       a = a+"8";
       b='';
       toggle = 0;
       printA();
-      console.log("a= " + a);
--     console.log("b= "+ b);
--     console.log("toggle= "+ toggle);
--     console.log("total= "+total);
+    }
+
     } else if( toggle === 3) {
       a = total;
       b = "8";
       printB();
-      console.log("a= " + a);
--     console.log("b= "+ b);
--     console.log("toggle= "+ toggle);
--     console.log("total= "+total);
+
     }
   })
     $('#button9').mousedown(function(){
     if(toggle === 0){
       a = a+"9";
       printA();
-      console.log("a= " + a);
--     console.log("b= "+ b);
--     console.log("toggle= "+ toggle);
--     console.log("total= "+total);
+
     } else if(toggle === 1) {
-      b = b+"9";
-      printB();
-      console.log("a= " + a);
--     console.log("b= "+ b);
--     console.log("toggle= "+ toggle);
--     console.log("total= "+total);
+
+      if (timesOperationButtonClicked > 1) {
+          equals();
+          a = total;
+          b = "9";
+      } else {
+        b = "9";
+        printB();
+      }
+
     } else if(toggle === 2){
+
+      if (timesOperationButtonClicked > 1) {
+          equals();
+          a = total;
+          b = "9";
+          toggle = 1;
+      } else {
       a ='';
       a = a+"9";
       b='';
       toggle = 0;
       printA();
-      console.log("a= " + a);
--     console.log("b= "+ b);
--     console.log("toggle= "+ toggle);
--     console.log("total= "+total);
+    }
+
     } else if( toggle === 3) {
       a = total;
       b = "9";
       printB();
-      console.log("a= " + a);
--     console.log("b= "+ b);
--     console.log("toggle= "+ toggle);
--     console.log("total= "+total);
+
     }
   })
     $('#button0').mousedown(function(){
     if(toggle === 0){
       a = a+"0";
       printA();
-      console.log("a= " + a);
--     console.log("b= "+ b);
--     console.log("toggle= "+ toggle);
--     console.log("total= "+total);
+
     } else if(toggle === 1) {
-      b = b+"0";
-      printB();
-      console.log("a= " + a);
--     console.log("b= "+ b);
--     console.log("toggle= "+ toggle);
--     console.log("total= "+total);
+
+      if (timesOperationButtonClicked > 1) {
+          equals();
+          a = total;
+          b = "0";
+      } else {
+        b = "0";
+        printB();
+      }
+
     } else if(toggle === 2){
+
+      if (timesOperationButtonClicked > 1) {
+          equals();
+          a = total;
+          b = "0";
+          toggle = 1;
+      } else {
       a ='';
       a = a+"0";
       b='';
       toggle = 0;
       printA();
-      console.log("a= " + a);
--     console.log("b= "+ b);
--     console.log("toggle= "+ toggle);
--     console.log("total= "+total);
+    }
+
     } else if( toggle === 3) {
       a = total;
       b = "0";
       printB();
-      console.log("a= " + a);
--     console.log("b= "+ b);
--     console.log("toggle= "+ toggle);
--     console.log("total= "+total);
     }
   })
 
