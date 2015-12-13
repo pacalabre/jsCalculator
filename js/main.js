@@ -1,4 +1,4 @@
- $(document).ready(function() {
+$(document).ready(function() {
   var total = '';
   var a = '';
   var b = '';
@@ -55,7 +55,7 @@
             b = '';
             b = b + "1";
             printB();
-            timesOperationButtonClicked =0;
+            timesOperationButtonClicked = 1;
             toggle = 1;
             console.log("this happened 4");
             console.log("a="+a);
@@ -111,6 +111,10 @@
     if(toggle === 0){
       a = a+"2";
       printA();
+      console.log("this happened 1");
+      console.log("a="+a);
+      console.log("b="+b);
+      console.log("toggle="+toggle);
       /* After an operator button is pressed (which increases toggle by 1), if 1 is pressed again
       it goes to var b. */
     } else if(toggle === 1) {
@@ -121,43 +125,76 @@
             printB();
             timesOperationButtonClicked = 0;
             toggle = 1;
+            console.log("this happened 2");
+            console.log("a="+a);
+            console.log("b="+b);
+            console.log("toggle="+toggle);
+            console.log("timeopclick="+timesOperationButtonClicked);
         }
       b = b+"2";
       printB();
+      console.log("this happened 3");
+      console.log("a="+a);
+      console.log("b="+b);
+      console.log("toggle="+toggle);
+      console.log("timeopclick="+timesOperationButtonClicked);
       /* If toggle is 2, which would happen after pressing the equals button, if 1 is pressed again
       the variable assignment goes to var a. */
     } else if(toggle === 2){
-        if (timesOperationButtonClicked > 1){
+      if (timesOperationButtonClicked > 1){
+            equals();
             a = total;
-            b='';
-            b = "2";
+            b = '';
+            b = b + "2";
             printB();
-            timesOperationButtonClicked = 0;
+            timesOperationButtonClicked = 1;
             toggle = 1;
+            console.log("this happened 4");
+            console.log("a="+a);
+            console.log("b="+b);
+            console.log("toggle="+toggle);
+            console.log("timeopclick="+timesOperationButtonClicked);
         } else {
       a ='';
       a = a+"2";
       b='';
       toggle = 0;
       printA();
+      console.log("this happened 5");
+      console.log("a="+a);
+      console.log("b="+b);
+      console.log("toggle="+toggle);
+      console.log("timeopclick="+timesOperationButtonClicked);
     }
       /* If toggle is 3, which would happen if after pressing the equals sign, you press another
       operation button, variable a would take on the total and the new var assignent would go
       to var b*/
     } else if( toggle === 3) {
       if (timesOperationButtonClicked > 1){
+            equals();
             a = total;
-            b='';
-            b = "2";
+            b = '';
+            b = b + "2";
             printB();
-            timesOperationButtonClicked = 0;
+            timesOperationButtonClicked =0;
             toggle = 1;
+            console.log("this happened 6");
+            console.log("a="+a);
+            console.log("b="+b);
+            console.log("toggle="+toggle);
+            console.log("timeopclick="+timesOperationButtonClicked);
         }
       a = total;
       b = '';
-      b= b+1;
+      b= b+"2";
       printB();
       toggle = 1;
+      console.log("this happened 7");
+      console.log("a="+a);
+      console.log("b="+b);
+      console.log("toggle="+toggle);
+      console.log("timeopclick="+timesOperationButtonClicked);
+
     }
   })
 
@@ -165,6 +202,10 @@
     if(toggle === 0){
       a = a+"3";
       printA();
+      console.log("this happened 1");
+      console.log("a="+a);
+      console.log("b="+b);
+      console.log("toggle="+toggle);
       /* After an operator button is pressed (which increases toggle by 1), if 1 is pressed again
       it goes to var b. */
     } else if(toggle === 1) {
@@ -175,43 +216,76 @@
             printB();
             timesOperationButtonClicked = 0;
             toggle = 1;
+            console.log("this happened 2");
+            console.log("a="+a);
+            console.log("b="+b);
+            console.log("toggle="+toggle);
+            console.log("timeopclick="+timesOperationButtonClicked);
         }
       b = b+"3";
       printB();
+      console.log("this happened 3");
+      console.log("a="+a);
+      console.log("b="+b);
+      console.log("toggle="+toggle);
+      console.log("timeopclick="+timesOperationButtonClicked);
       /* If toggle is 2, which would happen after pressing the equals button, if 1 is pressed again
       the variable assignment goes to var a. */
     } else if(toggle === 2){
       if (timesOperationButtonClicked > 1){
+            equals();
             a = total;
-            b='';
-            b = "3";
+            b = '';
+            b = b + "3";
             printB();
-            timesOperationButtonClicked = 0;
+            timesOperationButtonClicked = 1;
             toggle = 1;
+            console.log("this happened 4");
+            console.log("a="+a);
+            console.log("b="+b);
+            console.log("toggle="+toggle);
+            console.log("timeopclick="+timesOperationButtonClicked);
         } else {
       a ='';
       a = a+"3";
       b='';
       toggle = 0;
       printA();
+      console.log("this happened 5");
+      console.log("a="+a);
+      console.log("b="+b);
+      console.log("toggle="+toggle);
+      console.log("timeopclick="+timesOperationButtonClicked);
     }
       /* If toggle is 3, which would happen if after pressing the equals sign, you press another
       operation button, variable a would take on the total and the new var assignent would go
       to var b*/
     } else if( toggle === 3) {
       if (timesOperationButtonClicked > 1){
+            equals();
             a = total;
-            b='';
-            b = "3";
+            b = '';
+            b = b + "3";
             printB();
-            timesOperationButtonClicked = 0;
+            timesOperationButtonClicked =0;
             toggle = 1;
+            console.log("this happened 6");
+            console.log("a="+a);
+            console.log("b="+b);
+            console.log("toggle="+toggle);
+            console.log("timeopclick="+timesOperationButtonClicked);
         }
       a = total;
       b = '';
-      b= b+1;
+      b= b+"3";
       printB();
       toggle = 1;
+      console.log("this happened 7");
+      console.log("a="+a);
+      console.log("b="+b);
+      console.log("toggle="+toggle);
+      console.log("timeopclick="+timesOperationButtonClicked);
+
     }
   })
 
@@ -219,6 +293,10 @@
     if(toggle === 0){
       a = a+"4";
       printA();
+      console.log("this happened 1");
+      console.log("a="+a);
+      console.log("b="+b);
+      console.log("toggle="+toggle);
       /* After an operator button is pressed (which increases toggle by 1), if 1 is pressed again
       it goes to var b. */
     } else if(toggle === 1) {
@@ -229,43 +307,76 @@
             printB();
             timesOperationButtonClicked = 0;
             toggle = 1;
+            console.log("this happened 2");
+            console.log("a="+a);
+            console.log("b="+b);
+            console.log("toggle="+toggle);
+            console.log("timeopclick="+timesOperationButtonClicked);
         }
       b = b+"4";
       printB();
+      console.log("this happened 3");
+      console.log("a="+a);
+      console.log("b="+b);
+      console.log("toggle="+toggle);
+      console.log("timeopclick="+timesOperationButtonClicked);
       /* If toggle is 2, which would happen after pressing the equals button, if 1 is pressed again
       the variable assignment goes to var a. */
     } else if(toggle === 2){
       if (timesOperationButtonClicked > 1){
+            equals();
             a = total;
-            b='';
-            b = "4";
+            b = '';
+            b = b + "4";
             printB();
-            timesOperationButtonClicked = 0;
+            timesOperationButtonClicked = 1;
             toggle = 1;
+            console.log("this happened 4");
+            console.log("a="+a);
+            console.log("b="+b);
+            console.log("toggle="+toggle);
+            console.log("timeopclick="+timesOperationButtonClicked);
         } else {
       a ='';
       a = a+"4";
       b='';
       toggle = 0;
       printA();
+      console.log("this happened 5");
+      console.log("a="+a);
+      console.log("b="+b);
+      console.log("toggle="+toggle);
+      console.log("timeopclick="+timesOperationButtonClicked);
     }
       /* If toggle is 3, which would happen if after pressing the equals sign, you press another
       operation button, variable a would take on the total and the new var assignent would go
       to var b*/
     } else if( toggle === 3) {
       if (timesOperationButtonClicked > 1){
+            equals();
             a = total;
-            b='';
-            b = "4";
+            b = '';
+            b = b + "4";
             printB();
-            timesOperationButtonClicked = 0;
+            timesOperationButtonClicked =0;
             toggle = 1;
+            console.log("this happened 6");
+            console.log("a="+a);
+            console.log("b="+b);
+            console.log("toggle="+toggle);
+            console.log("timeopclick="+timesOperationButtonClicked);
         }
       a = total;
       b = '';
-      b= b+1;
+      b= b+"4";
       printB();
       toggle = 1;
+      console.log("this happened 7");
+      console.log("a="+a);
+      console.log("b="+b);
+      console.log("toggle="+toggle);
+      console.log("timeopclick="+timesOperationButtonClicked);
+
     }
   })
 
@@ -273,6 +384,10 @@
     if(toggle === 0){
       a = a+"5";
       printA();
+      console.log("this happened 1");
+      console.log("a="+a);
+      console.log("b="+b);
+      console.log("toggle="+toggle);
       /* After an operator button is pressed (which increases toggle by 1), if 1 is pressed again
       it goes to var b. */
     } else if(toggle === 1) {
@@ -283,43 +398,76 @@
             printB();
             timesOperationButtonClicked = 0;
             toggle = 1;
+            console.log("this happened 2");
+            console.log("a="+a);
+            console.log("b="+b);
+            console.log("toggle="+toggle);
+            console.log("timeopclick="+timesOperationButtonClicked);
         }
       b = b+"5";
       printB();
+      console.log("this happened 3");
+      console.log("a="+a);
+      console.log("b="+b);
+      console.log("toggle="+toggle);
+      console.log("timeopclick="+timesOperationButtonClicked);
       /* If toggle is 2, which would happen after pressing the equals button, if 1 is pressed again
       the variable assignment goes to var a. */
     } else if(toggle === 2){
       if (timesOperationButtonClicked > 1){
+            equals();
             a = total;
-            b='';
-            b = "5";
+            b = '';
+            b = b + "5";
             printB();
-            timesOperationButtonClicked = 0;
+            timesOperationButtonClicked = 1;
             toggle = 1;
+            console.log("this happened 4");
+            console.log("a="+a);
+            console.log("b="+b);
+            console.log("toggle="+toggle);
+            console.log("timeopclick="+timesOperationButtonClicked);
         } else {
       a ='';
       a = a+"5";
       b='';
       toggle = 0;
       printA();
+      console.log("this happened 5");
+      console.log("a="+a);
+      console.log("b="+b);
+      console.log("toggle="+toggle);
+      console.log("timeopclick="+timesOperationButtonClicked);
     }
       /* If toggle is 3, which would happen if after pressing the equals sign, you press another
       operation button, variable a would take on the total and the new var assignent would go
       to var b*/
     } else if( toggle === 3) {
       if (timesOperationButtonClicked > 1){
+            equals();
             a = total;
-            b='';
-            b = "5";
+            b = '';
+            b = b + "5";
             printB();
-            timesOperationButtonClicked = 0;
+            timesOperationButtonClicked =0;
             toggle = 1;
+            console.log("this happened 6");
+            console.log("a="+a);
+            console.log("b="+b);
+            console.log("toggle="+toggle);
+            console.log("timeopclick="+timesOperationButtonClicked);
         }
       a = total;
       b = '';
-      b= b+1;
+      b= b+"5";
       printB();
       toggle = 1;
+      console.log("this happened 7");
+      console.log("a="+a);
+      console.log("b="+b);
+      console.log("toggle="+toggle);
+      console.log("timeopclick="+timesOperationButtonClicked);
+
     }
   })
 
@@ -327,6 +475,10 @@
     if(toggle === 0){
       a = a+"6";
       printA();
+      console.log("this happened 1");
+      console.log("a="+a);
+      console.log("b="+b);
+      console.log("toggle="+toggle);
       /* After an operator button is pressed (which increases toggle by 1), if 1 is pressed again
       it goes to var b. */
     } else if(toggle === 1) {
@@ -337,43 +489,76 @@
             printB();
             timesOperationButtonClicked = 0;
             toggle = 1;
+            console.log("this happened 2");
+            console.log("a="+a);
+            console.log("b="+b);
+            console.log("toggle="+toggle);
+            console.log("timeopclick="+timesOperationButtonClicked);
         }
       b = b+"6";
       printB();
+      console.log("this happened 3");
+      console.log("a="+a);
+      console.log("b="+b);
+      console.log("toggle="+toggle);
+      console.log("timeopclick="+timesOperationButtonClicked);
       /* If toggle is 2, which would happen after pressing the equals button, if 1 is pressed again
       the variable assignment goes to var a. */
     } else if(toggle === 2){
       if (timesOperationButtonClicked > 1){
+            equals();
             a = total;
-            b='';
-            b = "6";
+            b = '';
+            b = b + "6";
             printB();
-            timesOperationButtonClicked = 0;
+            timesOperationButtonClicked = 1;
             toggle = 1;
+            console.log("this happened 4");
+            console.log("a="+a);
+            console.log("b="+b);
+            console.log("toggle="+toggle);
+            console.log("timeopclick="+timesOperationButtonClicked);
         } else {
       a ='';
       a = a+"6";
       b='';
       toggle = 0;
       printA();
+      console.log("this happened 5");
+      console.log("a="+a);
+      console.log("b="+b);
+      console.log("toggle="+toggle);
+      console.log("timeopclick="+timesOperationButtonClicked);
     }
       /* If toggle is 3, which would happen if after pressing the equals sign, you press another
       operation button, variable a would take on the total and the new var assignent would go
       to var b*/
     } else if( toggle === 3) {
       if (timesOperationButtonClicked > 1){
+            equals();
             a = total;
-            b='';
-            b = "6";
+            b = '';
+            b = b + "6";
             printB();
-            timesOperationButtonClicked = 0;
+            timesOperationButtonClicked =0;
             toggle = 1;
+            console.log("this happened 6");
+            console.log("a="+a);
+            console.log("b="+b);
+            console.log("toggle="+toggle);
+            console.log("timeopclick="+timesOperationButtonClicked);
         }
       a = total;
       b = '';
-      b= b+1;
+      b= b+"6";
       printB();
       toggle = 1;
+      console.log("this happened 7");
+      console.log("a="+a);
+      console.log("b="+b);
+      console.log("toggle="+toggle);
+      console.log("timeopclick="+timesOperationButtonClicked);
+
     }
   })
 
@@ -381,6 +566,10 @@
     if(toggle === 0){
       a = a+"7";
       printA();
+      console.log("this happened 1");
+      console.log("a="+a);
+      console.log("b="+b);
+      console.log("toggle="+toggle);
       /* After an operator button is pressed (which increases toggle by 1), if 1 is pressed again
       it goes to var b. */
     } else if(toggle === 1) {
@@ -391,43 +580,76 @@
             printB();
             timesOperationButtonClicked = 0;
             toggle = 1;
+            console.log("this happened 2");
+            console.log("a="+a);
+            console.log("b="+b);
+            console.log("toggle="+toggle);
+            console.log("timeopclick="+timesOperationButtonClicked);
         }
       b = b+"7";
       printB();
+      console.log("this happened 3");
+      console.log("a="+a);
+      console.log("b="+b);
+      console.log("toggle="+toggle);
+      console.log("timeopclick="+timesOperationButtonClicked);
       /* If toggle is 2, which would happen after pressing the equals button, if 1 is pressed again
       the variable assignment goes to var a. */
     } else if(toggle === 2){
       if (timesOperationButtonClicked > 1){
+            equals();
             a = total;
-            b='';
-            b = "7";
+            b = '';
+            b = b + "7";
             printB();
-            timesOperationButtonClicked = 0;
+            timesOperationButtonClicked = 1;
             toggle = 1;
+            console.log("this happened 4");
+            console.log("a="+a);
+            console.log("b="+b);
+            console.log("toggle="+toggle);
+            console.log("timeopclick="+timesOperationButtonClicked);
         } else {
       a ='';
       a = a+"7";
       b='';
       toggle = 0;
       printA();
+      console.log("this happened 5");
+      console.log("a="+a);
+      console.log("b="+b);
+      console.log("toggle="+toggle);
+      console.log("timeopclick="+timesOperationButtonClicked);
     }
       /* If toggle is 3, which would happen if after pressing the equals sign, you press another
       operation button, variable a would take on the total and the new var assignent would go
       to var b*/
     } else if( toggle === 3) {
       if (timesOperationButtonClicked > 1){
+            equals();
             a = total;
-            b='';
-            b = "7";
+            b = '';
+            b = b + "7";
             printB();
-            timesOperationButtonClicked = 0;
+            timesOperationButtonClicked =0;
             toggle = 1;
+            console.log("this happened 6");
+            console.log("a="+a);
+            console.log("b="+b);
+            console.log("toggle="+toggle);
+            console.log("timeopclick="+timesOperationButtonClicked);
         }
       a = total;
       b = '';
-      b= b+1;
+      b= b+"7";
       printB();
       toggle = 1;
+      console.log("this happened 7");
+      console.log("a="+a);
+      console.log("b="+b);
+      console.log("toggle="+toggle);
+      console.log("timeopclick="+timesOperationButtonClicked);
+
     }
   })
 
@@ -435,6 +657,10 @@
     if(toggle === 0){
       a = a+"8";
       printA();
+      console.log("this happened 1");
+      console.log("a="+a);
+      console.log("b="+b);
+      console.log("toggle="+toggle);
       /* After an operator button is pressed (which increases toggle by 1), if 1 is pressed again
       it goes to var b. */
     } else if(toggle === 1) {
@@ -445,43 +671,76 @@
             printB();
             timesOperationButtonClicked = 0;
             toggle = 1;
+            console.log("this happened 2");
+            console.log("a="+a);
+            console.log("b="+b);
+            console.log("toggle="+toggle);
+            console.log("timeopclick="+timesOperationButtonClicked);
         }
       b = b+"8";
       printB();
+      console.log("this happened 3");
+      console.log("a="+a);
+      console.log("b="+b);
+      console.log("toggle="+toggle);
+      console.log("timeopclick="+timesOperationButtonClicked);
       /* If toggle is 2, which would happen after pressing the equals button, if 1 is pressed again
       the variable assignment goes to var a. */
     } else if(toggle === 2){
       if (timesOperationButtonClicked > 1){
+            equals();
             a = total;
-            b='';
-            b = "8";
+            b = '';
+            b = b + "8";
             printB();
-            timesOperationButtonClicked = 0;
+            timesOperationButtonClicked = 1;
             toggle = 1;
+            console.log("this happened 4");
+            console.log("a="+a);
+            console.log("b="+b);
+            console.log("toggle="+toggle);
+            console.log("timeopclick="+timesOperationButtonClicked);
         } else {
       a ='';
       a = a+"8";
       b='';
       toggle = 0;
       printA();
+      console.log("this happened 5");
+      console.log("a="+a);
+      console.log("b="+b);
+      console.log("toggle="+toggle);
+      console.log("timeopclick="+timesOperationButtonClicked);
     }
       /* If toggle is 3, which would happen if after pressing the equals sign, you press another
       operation button, variable a would take on the total and the new var assignent would go
       to var b*/
     } else if( toggle === 3) {
       if (timesOperationButtonClicked > 1){
+            equals();
             a = total;
-            b='';
-            b = "8";
+            b = '';
+            b = b + "8";
             printB();
-            timesOperationButtonClicked = 0;
+            timesOperationButtonClicked =0;
             toggle = 1;
+            console.log("this happened 6");
+            console.log("a="+a);
+            console.log("b="+b);
+            console.log("toggle="+toggle);
+            console.log("timeopclick="+timesOperationButtonClicked);
         }
       a = total;
       b = '';
-      b= b+1;
+      b= b+"8";
       printB();
       toggle = 1;
+      console.log("this happened 7");
+      console.log("a="+a);
+      console.log("b="+b);
+      console.log("toggle="+toggle);
+      console.log("timeopclick="+timesOperationButtonClicked);
+
     }
   })
 
@@ -489,6 +748,10 @@
     if(toggle === 0){
       a = a+"9";
       printA();
+      console.log("this happened 1");
+      console.log("a="+a);
+      console.log("b="+b);
+      console.log("toggle="+toggle);
       /* After an operator button is pressed (which increases toggle by 1), if 1 is pressed again
       it goes to var b. */
     } else if(toggle === 1) {
@@ -499,43 +762,76 @@
             printB();
             timesOperationButtonClicked = 0;
             toggle = 1;
+            console.log("this happened 2");
+            console.log("a="+a);
+            console.log("b="+b);
+            console.log("toggle="+toggle);
+            console.log("timeopclick="+timesOperationButtonClicked);
         }
       b = b+"9";
       printB();
+      console.log("this happened 3");
+      console.log("a="+a);
+      console.log("b="+b);
+      console.log("toggle="+toggle);
+      console.log("timeopclick="+timesOperationButtonClicked);
       /* If toggle is 2, which would happen after pressing the equals button, if 1 is pressed again
       the variable assignment goes to var a. */
     } else if(toggle === 2){
       if (timesOperationButtonClicked > 1){
+            equals();
             a = total;
-            b='';
-            b = "9";
+            b = '';
+            b = b + "9";
             printB();
-            timesOperationButtonClicked = 0;
+            timesOperationButtonClicked = 1;
             toggle = 1;
+            console.log("this happened 4");
+            console.log("a="+a);
+            console.log("b="+b);
+            console.log("toggle="+toggle);
+            console.log("timeopclick="+timesOperationButtonClicked);
         } else {
       a ='';
       a = a+"9";
       b='';
       toggle = 0;
       printA();
+      console.log("this happened 5");
+      console.log("a="+a);
+      console.log("b="+b);
+      console.log("toggle="+toggle);
+      console.log("timeopclick="+timesOperationButtonClicked);
     }
       /* If toggle is 3, which would happen if after pressing the equals sign, you press another
       operation button, variable a would take on the total and the new var assignent would go
       to var b*/
     } else if( toggle === 3) {
       if (timesOperationButtonClicked > 1){
+            equals();
             a = total;
-            b='';
-            b = "9";
+            b = '';
+            b = b + "9";
             printB();
-            timesOperationButtonClicked = 0;
+            timesOperationButtonClicked =0;
             toggle = 1;
+            console.log("this happened 6");
+            console.log("a="+a);
+            console.log("b="+b);
+            console.log("toggle="+toggle);
+            console.log("timeopclick="+timesOperationButtonClicked);
         }
       a = total;
       b = '';
-      b= b+1;
+      b= b+"9";
       printB();
       toggle = 1;
+      console.log("this happened 7");
+      console.log("a="+a);
+      console.log("b="+b);
+      console.log("toggle="+toggle);
+      console.log("timeopclick="+timesOperationButtonClicked);
+
     }
   })
 
