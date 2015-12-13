@@ -937,18 +937,21 @@ $(document).ready(function() {
   //if minus sign button is pressed, 2 to equals function
   $('#minus').mousedown(function() {
     toggle ++;
+    timesOperationButtonClicked ++;
     operation = +2;
   })
 
   //if divide sign button is pressed, 3 to equals function
   $('#divide').mousedown(function() {
     toggle ++;
+    timesOperationButtonClicked ++;
     operation = +3;
   })
 
   //if multiply button is pressed, 4 to equals function
   $('#multiply').mousedown(function() {
     toggle ++;
+    timesOperationButtonClicked ++;
     operation = +4;
   })
 
