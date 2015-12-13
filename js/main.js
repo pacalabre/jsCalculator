@@ -42,7 +42,7 @@
           equals();
           a = total;
           b = "1";
-          toggle = 2;
+          toggle = 1;
       } else {
       a ='';
       a = a+"1";
