@@ -926,7 +926,6 @@ $(document).ready(function() {
     }
   })
 
-
   //if plus sign button is pressed, 1 to equals function
   $('#add').mousedown(function() {
     toggle ++;
@@ -959,9 +958,10 @@ $(document).ready(function() {
   $('#clear').mousedown(function() {
     a='';
     b='';
-    total= 0;
+    total= '0';
     toggle = 0;
     operation = 0;
+    timesOperationButtonClicked = 0;
 
     //Print total to screen
     $('#total-display').html(function() {
@@ -1004,11 +1004,11 @@ $(document).ready(function() {
 
     if (operation === 1) {
      total = add(firstNum,secondNum);
-    } else if ( operation === 2) {
+    } else if (operation === 2) {
      total = subtract(firstNum,secondNum);
     } else if (operation === 3) {
       total = divide(firstNum,secondNum);
-    } else if ( operation === 4 ) {
+    } else if (operation === 4) {
       total = multiply(firstNum,secondNum);
     }
     console.log("a= " + a);
@@ -1035,13 +1035,13 @@ $(document).ready(function() {
 
   function subtract(a,b) {
     var total = 0;
-    var firstNum = parseFloat(a);
-    var secondNum = parseFloat(b);
+    var firstNum = a;
+    var secondNum = b;
     total = firstNum - secondNum;
     toggle++;
 
     //Print total to screen
-    $('#total-display').html(function(){
+    $('#total-display').html(function() {
       return '<h2>'+total+'</h2>';
     })
     return total = firstNum - secondNum;
@@ -1049,8 +1049,8 @@ $(document).ready(function() {
 
   function multiply(a,b) {
     var total = 0;
-    var firstNum = parseFloat(a);
-    var secondNum = parseFloat(b);
+    var firstNum = a;
+    var secondNum = b;
     total = firstNum * secondNum;
     toggle++;
 
@@ -1063,8 +1063,8 @@ $(document).ready(function() {
 
   function divide(a,b) {
     var total = 0;
-    var firstNum = parseFloat(a);
-    var secondNum = parseFloat(b);
+    var firstNum = a;
+    var secondNum = b;
     total = firstNum / secondNum;
     toggle++;
 
