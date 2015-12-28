@@ -65,6 +65,7 @@ $(document).ready(function() {
 
     }
      else if( toggle === 4) {
+
       b=b+"1";
       printB();
       console.log("a="+a);
@@ -72,7 +73,7 @@ $(document).ready(function() {
       console.log("toggle="+toggle);
     }
     else if (toggle === 5) {
-      equals();
+      //equals();
       a = total;
       b = '';
       b = b+1;
@@ -82,6 +83,8 @@ $(document).ready(function() {
       console.log("b="+b);
       console.log("toggle="+toggle);
     } else if (toggle > 5) {
+      //equals();
+
       b = b+1;
       printB();
       toggle = 4;
@@ -615,16 +618,16 @@ $(document).ready(function() {
 
     if (operation === 1) {
      total = add(firstNum,secondNum);
-     return total;
+     a=total;
     } else if (operation === 2) {
      total = subtract(firstNum,secondNum);
-     return total;
+     a=total;
     } else if (operation === 3) {
       total = divide(firstNum,secondNum);
-      return total;
+      a=total;
     } else if (operation === 4) {
       total = multiply(firstNum,secondNum);
-      return total;
+      a=total;
     }
     console.log("a= " + a);
 -   console.log("b= "+ b);
