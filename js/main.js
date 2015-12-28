@@ -19,7 +19,7 @@ $(document).ready(function() {
     // if toggle is equal to 0, value is assigned to A
     if(toggle === 0) {
       clear();
-      a = a+"1";
+      a = "1";
       printA();
       toggle++;
       console.log("beAnz1");
@@ -28,6 +28,8 @@ $(document).ready(function() {
       console.log("toggle="+toggle);
     // If toggle is equal to 2, value gets assigned to B
     } else if (toggle === 1) {
+        // if after you press the equals button, you click another operator to run on the total,
+        // if not toggle defaults to A and will start a new equation
         if(timesOperationButtonClicked === 1 ) {
             b = b+"1";
             printB();
@@ -50,7 +52,7 @@ $(document).ready(function() {
       console.log("timeopclick="+timesOperationButtonClicked);
     // If toggle is equal to 3, var A is equal to the total and the new value goes to B
     } else if(toggle === 3){
-      equals();
+      //equals();
       a = total;
       b = '';
       b = b+1;
@@ -89,11 +91,477 @@ $(document).ready(function() {
     }
   })
 
+  //button 2
+    $('#button2').mousedown(function(){
+      // if toggle is equal to 0, value is assigned to A
+      if(toggle === 0) {
+        clear();
+        a = a+"2";
+        printA();
+        toggle++;
+      // If toggle is equal to 2, value gets assigned to B
+      } else if (toggle === 1) {
+          if(timesOperationButtonClicked === 1 ) {
+              b = b+"2";
+              printB();
+              toggle = 2;
+            } else {
+          a = a+"2";
+          printA();
+        }
+      // If toggle is equal to 2, value gets assigned to B
+      } else if (toggle === 2) {
+        b = b+"2";
+        printB();
+      // If toggle is equal to 3, var A is equal to the total and the new value goes to B
+      } else if(toggle === 3){
+        //equals();
+        a = total;
+        b = '';
+        b = b+"2";
+        printB();
+        toggle++;
+      }
+       else if( toggle === 4) {
+        b=b+"2";
+        printB();
+      }
+      else if (toggle === 5) {
+        equals();
+        a = total;
+        b = '';
+        b = b+"2";
+        printB();
+        toggle = 4;
+      } else if (toggle > 5) {
+        b = b+"2";
+        printB();
+        toggle = 4;
+      }
+    })
+
+  //button 3
+    $('#button3').mousedown(function(){
+      // if toggle is equal to 0, value is assigned to A
+      if(toggle === 0) {
+        clear();
+        a = a+"3";
+        printA();
+        toggle++;
+      // If toggle is equal to 2, value gets assigned to B
+      } else if (toggle === 1) {
+          if(timesOperationButtonClicked === 1 ) {
+              b = b+"3";
+              printB();
+              toggle = 2;
+            } else {
+          a = a+"3";
+          printA();
+        }
+      // If toggle is equal to 2, value gets assigned to B
+      } else if (toggle === 2) {
+        b = b+"3";
+        printB();
+      // If toggle is equal to 3, var A is equal to the total and the new value goes to B
+      } else if(toggle === 3){
+        //equals();
+        a = total;
+        b = '';
+        b = b+"3";
+        printB();
+        toggle++;
+      }
+       else if( toggle === 4) {
+        b=b+"3";
+        printB();
+      }
+      else if (toggle === 5) {
+        equals();
+        a = total;
+        b = '';
+        b = b+"3";
+        printB();
+        toggle = 4;
+      } else if (toggle > 5) {
+        b = b+"3";
+        printB();
+        toggle = 4;
+      }
+    })
+
+    //button 4
+    $('#button4').mousedown(function(){
+      // if toggle is equal to 0, value is assigned to A
+      if(toggle === 0) {
+        clear();
+        a = a+"4";
+        printA();
+        toggle++;
+      // If toggle is equal to 2, value gets assigned to B
+      } else if (toggle === 1) {
+          if(timesOperationButtonClicked === 1 ) {
+              b = b+"4";
+              printB();
+              toggle = 2;
+            } else {
+          a = a+"4";
+          printA();
+        }
+      // If toggle is equal to 2, value gets assigned to B
+      } else if (toggle === 2) {
+        b = b+"4";
+        printB();
+      // If toggle is equal to 3, var A is equal to the total and the new value goes to B
+      } else if(toggle === 3){
+        //equals();
+        a = total;
+        b = '';
+        b = b+"4";
+        printB();
+        toggle++;
+      }
+       else if( toggle === 4) {
+        b=b+"4";
+        printB();
+      }
+      else if (toggle === 5) {
+        equals();
+        a = total;
+        b = '';
+        b = b+"4";
+        printB();
+        toggle = 4;
+      } else if (toggle > 5) {
+        b = b+"4";
+        printB();
+        toggle = 4;
+      }
+    })
+
+    //button 5
+    $('#button5').mousedown(function(){
+      // if toggle is equal to 0, value is assigned to A
+      if(toggle === 0) {
+        clear();
+        a = a+"5";
+        printA();
+        toggle++;
+      // If toggle is equal to 2, value gets assigned to B
+      } else if (toggle === 1) {
+          if(timesOperationButtonClicked === 1 ) {
+              b = b+"5";
+              printB();
+              toggle = 2;
+            } else {
+          a = a+"5";
+          printA();
+        }
+      // If toggle is equal to 2, value gets assigned to B
+      } else if (toggle === 2) {
+        b = b+"5";
+        printB();
+      // If toggle is equal to 3, var A is equal to the total and the new value goes to B
+      } else if(toggle === 3){
+        //equals();
+        a = total;
+        b = '';
+        b = b+"5";
+        printB();
+        toggle++;
+      }
+       else if( toggle === 4) {
+        b=b+"5";
+        printB();
+      }
+      else if (toggle === 5) {
+        equals();
+        a = total;
+        b = '';
+        b = b+"5";
+        printB();
+        toggle = 4;
+      } else if (toggle > 5) {
+        b = b+"5";
+        printB();
+        toggle = 4;
+      }
+    })
+
+    //button 6
+    $('#button6').mousedown(function(){
+      // if toggle is equal to 0, value is assigned to A
+      if(toggle === 0) {
+        clear();
+        a = a+"6";
+        printA();
+        toggle++;
+      // If toggle is equal to 2, value gets assigned to B
+      } else if (toggle === 1) {
+          if(timesOperationButtonClicked === 1 ) {
+              b = b+"6";
+              printB();
+              toggle = 2;
+            } else {
+          a = a+"6";
+          printA();
+        }
+      // If toggle is equal to 2, value gets assigned to B
+      } else if (toggle === 2) {
+        b = b+"6";
+        printB();
+      // If toggle is equal to 3, var A is equal to the total and the new value goes to B
+      } else if(toggle === 3){
+        //equals();
+        a = total;
+        b = '';
+        b = b+"6";
+        printB();
+        toggle++;
+      }
+       else if( toggle === 4) {
+        b=b+"6";
+        printB();
+      }
+      else if (toggle === 5) {
+        equals();
+        a = total;
+        b = '';
+        b = b+"6";
+        printB();
+        toggle = 4;
+      } else if (toggle > 5) {
+        b = b+"6";
+        printB();
+        toggle = 4;
+      }
+    })
+
+    //button 7
+    $('#button7').mousedown(function(){
+      // if toggle is equal to 0, value is assigned to A
+      if(toggle === 0) {
+        clear();
+        a = a+"7";
+        printA();
+        toggle++;
+      // If toggle is equal to 2, value gets assigned to B
+      } else if (toggle === 1) {
+          if(timesOperationButtonClicked === 1 ) {
+              b = b+"7";
+              printB();
+              toggle = 2;
+            } else {
+          a = a+"7";
+          printA();
+        }
+      // If toggle is equal to 2, value gets assigned to B
+      } else if (toggle === 2) {
+        b = b+"7";
+        printB();
+      // If toggle is equal to 3, var A is equal to the total and the new value goes to B
+      } else if(toggle === 3){
+        //equals();
+        a = total;
+        b = '';
+        b = b+"7";
+        printB();
+        toggle++;
+      }
+       else if( toggle === 4) {
+        b=b+"7";
+        printB();
+      }
+      else if (toggle === 5) {
+        equals();
+        a = total;
+        b = '';
+        b = b+"7";
+        printB();
+        toggle = 4;
+      } else if (toggle > 5) {
+        b = b+"7";
+        printB();
+        toggle = 4;
+      }
+    })
+
+    //button 8
+    $('#button8').mousedown(function(){
+      // if toggle is equal to 0, value is assigned to A
+      if(toggle === 0) {
+        clear();
+        a = a+"8";
+        printA();
+        toggle++;
+      // If toggle is equal to 2, value gets assigned to B
+      } else if (toggle === 1) {
+          if(timesOperationButtonClicked === 1 ) {
+              b = b+"8";
+              printB();
+              toggle = 2;
+            } else {
+          a = a+"8";
+          printA();
+        }
+      // If toggle is equal to 2, value gets assigned to B
+      } else if (toggle === 2) {
+        b = b+"8";
+        printB();
+      // If toggle is equal to 3, var A is equal to the total and the new value goes to B
+      } else if(toggle === 3){
+        //equals();
+        a = total;
+        b = '';
+        b = b+"8";
+        printB();
+        toggle++;
+      }
+       else if( toggle === 4) {
+        b=b+"8";
+        printB();
+      }
+      else if (toggle === 5) {
+        equals();
+        a = total;
+        b = '';
+        b = b+"8";
+        printB();
+        toggle = 4;
+      } else if (toggle > 5) {
+        b = b+"8";
+        printB();
+        toggle = 4;
+      }
+    })
+
+    //button 9
+    $('#button9').mousedown(function(){
+      // if toggle is equal to 0, value is assigned to A
+      if(toggle === 0) {
+        clear();
+        a = a+"9";
+        printA();
+        toggle++;
+      // If toggle is equal to 2, value gets assigned to B
+      } else if (toggle === 1) {
+          if(timesOperationButtonClicked === 1 ) {
+              b = b+"9";
+              printB();
+              toggle = 2;
+            } else {
+          a = a+"9";
+          printA();
+        }
+      // If toggle is equal to 2, value gets assigned to B
+      } else if (toggle === 2) {
+        b = b+"9";
+        printB();
+      // If toggle is equal to 3, var A is equal to the total and the new value goes to B
+      } else if(toggle === 3){
+        //equals();
+        a = total;
+        b = '';
+        b = b+"9";
+        printB();
+        toggle++;
+      }
+       else if( toggle === 4) {
+        b=b+"9";
+        printB();
+      }
+      else if (toggle === 5) {
+        equals();
+        a = total;
+        b = '';
+        b = b+"9";
+        printB();
+        toggle = 4;
+      } else if (toggle > 5) {
+        b = b+"9";
+        printB();
+        toggle = 4;
+      }
+    })
+
+    //button 0
+    $('#button0').mousedown(function(){
+      // if toggle is equal to 0, value is assigned to A
+      if(toggle === 0) {
+        clear();
+        a = a+"0";
+        printA();
+        toggle++;
+      // If toggle is equal to 2, value gets assigned to B
+      } else if (toggle === 1) {
+          if(timesOperationButtonClicked === 1 ) {
+              b = b+"0";
+              printB();
+              toggle = 2;
+            } else {
+          a = a+"0";
+          printA();
+        }
+      // If toggle is equal to 2, value gets assigned to B
+      } else if (toggle === 2) {
+        b = b+"0";
+        printB();
+      // If toggle is equal to 3, var A is equal to the total and the new value goes to B
+      } else if(toggle === 3){
+        //equals();
+        a = total;
+        b = '';
+        b = b+"0";
+        printB();
+        toggle++;
+      }
+       else if( toggle === 4) {
+        b=b+"0";
+        printB();
+      }
+      else if (toggle === 5) {
+        equals();
+        a = total;
+        b = '';
+        b = b+"0";
+        printB();
+        toggle = 4;
+      } else if (toggle > 5) {
+        b = b+"0";
+        printB();
+        toggle = 4;
+      }
+    })
+
   //if plus sign button is pressed, 1 to equals function
   $('#add').mousedown(function() {
+    equals();
     toggle ++;
     timesOperationButtonClicked ++;
     operation = +1;
+  })
+
+  //if minus sign button is pressed, 1 to equals function
+  $('#minus').mousedown(function() {
+    equals();
+    toggle ++;
+    timesOperationButtonClicked ++;
+    operation = +2;
+  })
+
+  //if division sign button is pressed, 1 to equals function
+  $('#divide').mousedown(function() {
+    equals();
+    toggle ++;
+    timesOperationButtonClicked ++;
+    operation = +3;
+  })
+
+  //if multiply sign button is pressed, 1 to equals function
+  $('#multiply').mousedown(function() {
+    equals();
+    toggle ++;
+    timesOperationButtonClicked ++;
+    operation = +4;
   })
 
 
@@ -109,6 +577,9 @@ $(document).ready(function() {
 
   //if equals sign is pressed, run selected operator
   $('#equals').mousedown(function() {
+
+    console.log("a= " + a);
+    console.log('total='+total)
     equals();
     console.log("timesOperationButtonClicked = "+timesOperationButtonClicked);
     console.log("a= " + a);
@@ -138,17 +609,22 @@ $(document).ready(function() {
   }
 
   function equals() {
+    console.log("a is equal to"+a);
     var firstNum = parseFloat(a);
     var secondNum = parseFloat(b);
 
     if (operation === 1) {
      total = add(firstNum,secondNum);
+     return total;
     } else if (operation === 2) {
      total = subtract(firstNum,secondNum);
+     return total;
     } else if (operation === 3) {
       total = divide(firstNum,secondNum);
+      return total;
     } else if (operation === 4) {
       total = multiply(firstNum,secondNum);
+      return total;
     }
     console.log("a= " + a);
 -   console.log("b= "+ b);
@@ -168,7 +644,6 @@ $(document).ready(function() {
   //operational functions
 
   function add(a,b) {
-    var total = 0;
     var firstNum = a;
     var secondNum = b;
     total = firstNum + secondNum;
@@ -179,4 +654,40 @@ $(document).ready(function() {
     })
     return total = firstNum + secondNum;
   }
+
+  function subtract(a,b) {
+      var firstNum = a;
+      var secondNum = b;
+      total = firstNum - secondNum;
+
+      //Print total to screen
+      $('#total-display').html(function(){
+        return '<h2>'+total+'</h2>';
+      })
+      return total = firstNum - secondNum;
+    }
+
+    function multiply(a,b) {
+      var firstNum = a;
+      var secondNum = b;
+      total = firstNum * secondNum;
+
+      //Print total to screen
+      $('#total-display').html(function(){
+        return '<h2>'+total+'</h2>';
+      })
+      return total = firstNum * secondNum;
+    }
+
+    function divide(a,b) {
+      var firstNum = a;
+      var secondNum = b;
+      total = firstNum / secondNum;
+
+      //Print total to screen
+      $('#total-display').html(function(){
+        return '<h2>'+total+'</h2>';
+      })
+      return total = firstNum / secondNum;
+    }
 })
