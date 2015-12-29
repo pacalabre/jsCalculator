@@ -55,7 +55,7 @@ $(document).ready(function() {
       //equals();
       a = total;
       b = '';
-      b = b+1;
+      b = b+'1';
       printB();
       toggle++;
       console.log("a="+a);
@@ -76,7 +76,7 @@ $(document).ready(function() {
       //equals();
       a = total;
       b = '';
-      b = b+1;
+      b = b+'1';
       printB();
       toggle = 4;
       console.log("a="+a);
@@ -85,7 +85,7 @@ $(document).ready(function() {
     } else if (toggle > 5) {
       //equals();
 
-      b = b+1;
+      b = b+'1';
       printB();
       toggle = 4;
       console.log("a="+a);
@@ -99,7 +99,7 @@ $(document).ready(function() {
       // if toggle is equal to 0, value is assigned to A
       if(toggle === 0) {
         clear();
-        a = a+"2";
+        a = "2";
         printA();
         toggle++;
       // If toggle is equal to 2, value gets assigned to B
@@ -130,7 +130,7 @@ $(document).ready(function() {
         printB();
       }
       else if (toggle === 5) {
-        equals();
+        //equals();
         a = total;
         b = '';
         b = b+"2";
@@ -148,7 +148,7 @@ $(document).ready(function() {
       // if toggle is equal to 0, value is assigned to A
       if(toggle === 0) {
         clear();
-        a = a+"3";
+        a = "3";
         printA();
         toggle++;
       // If toggle is equal to 2, value gets assigned to B
@@ -179,7 +179,7 @@ $(document).ready(function() {
         printB();
       }
       else if (toggle === 5) {
-        equals();
+        //equals();
         a = total;
         b = '';
         b = b+"3";
@@ -197,7 +197,7 @@ $(document).ready(function() {
       // if toggle is equal to 0, value is assigned to A
       if(toggle === 0) {
         clear();
-        a = a+"4";
+        a = "4";
         printA();
         toggle++;
       // If toggle is equal to 2, value gets assigned to B
@@ -228,7 +228,7 @@ $(document).ready(function() {
         printB();
       }
       else if (toggle === 5) {
-        equals();
+        //equals();
         a = total;
         b = '';
         b = b+"4";
@@ -246,7 +246,7 @@ $(document).ready(function() {
       // if toggle is equal to 0, value is assigned to A
       if(toggle === 0) {
         clear();
-        a = a+"5";
+        a = "5";
         printA();
         toggle++;
       // If toggle is equal to 2, value gets assigned to B
@@ -277,7 +277,7 @@ $(document).ready(function() {
         printB();
       }
       else if (toggle === 5) {
-        equals();
+        //equals();
         a = total;
         b = '';
         b = b+"5";
@@ -295,7 +295,7 @@ $(document).ready(function() {
       // if toggle is equal to 0, value is assigned to A
       if(toggle === 0) {
         clear();
-        a = a+"6";
+        a = "6";
         printA();
         toggle++;
       // If toggle is equal to 2, value gets assigned to B
@@ -326,7 +326,7 @@ $(document).ready(function() {
         printB();
       }
       else if (toggle === 5) {
-        equals();
+        //equals();
         a = total;
         b = '';
         b = b+"6";
@@ -344,7 +344,7 @@ $(document).ready(function() {
       // if toggle is equal to 0, value is assigned to A
       if(toggle === 0) {
         clear();
-        a = a+"7";
+        a = "7";
         printA();
         toggle++;
       // If toggle is equal to 2, value gets assigned to B
@@ -375,7 +375,7 @@ $(document).ready(function() {
         printB();
       }
       else if (toggle === 5) {
-        equals();
+        //equals();
         a = total;
         b = '';
         b = b+"7";
@@ -393,7 +393,7 @@ $(document).ready(function() {
       // if toggle is equal to 0, value is assigned to A
       if(toggle === 0) {
         clear();
-        a = a+"8";
+        a = "8";
         printA();
         toggle++;
       // If toggle is equal to 2, value gets assigned to B
@@ -424,7 +424,7 @@ $(document).ready(function() {
         printB();
       }
       else if (toggle === 5) {
-        equals();
+        //equals();
         a = total;
         b = '';
         b = b+"8";
@@ -442,7 +442,7 @@ $(document).ready(function() {
       // if toggle is equal to 0, value is assigned to A
       if(toggle === 0) {
         clear();
-        a = a+"9";
+        a = "9";
         printA();
         toggle++;
       // If toggle is equal to 2, value gets assigned to B
@@ -473,7 +473,7 @@ $(document).ready(function() {
         printB();
       }
       else if (toggle === 5) {
-        equals();
+        //equals();
         a = total;
         b = '';
         b = b+"9";
@@ -491,7 +491,7 @@ $(document).ready(function() {
       // if toggle is equal to 0, value is assigned to A
       if(toggle === 0) {
         clear();
-        a = a+"0";
+        a = "0";
         printA();
         toggle++;
       // If toggle is equal to 2, value gets assigned to B
@@ -522,7 +522,7 @@ $(document).ready(function() {
         printB();
       }
       else if (toggle === 5) {
-        equals();
+        //equals();
         a = total;
         b = '';
         b = b+"0";
@@ -590,7 +590,7 @@ $(document).ready(function() {
 -   console.log("toggle= "+ toggle);
 -   console.log("total= "+total);
     a = total;
-    b='';
+    b= 0;
     timesOperationButtonClicked = 0;
     toggle = 0;
   })
@@ -619,7 +619,7 @@ $(document).ready(function() {
     if (operation === 1) {
      total = add(firstNum,secondNum);
      a=total;
-     b=0;
+     b= 0;
     } else if (operation === 2) {
      total = subtract(firstNum,secondNum);
      a=total;
