@@ -590,7 +590,7 @@ $(document).ready(function() {
 -   console.log("toggle= "+ toggle);
 -   console.log("total= "+total);
     a = total;
-    b= 0;
+    b='';
     timesOperationButtonClicked = 0;
     toggle = 0;
   })
@@ -619,7 +619,7 @@ $(document).ready(function() {
     if (operation === 1) {
      total = add(firstNum,secondNum);
      a=total;
-     b= 0;
+     b=0;
     } else if (operation === 2) {
      total = subtract(firstNum,secondNum);
      a=total;
