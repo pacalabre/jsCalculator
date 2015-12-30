@@ -640,19 +640,19 @@ $(document).ready(function() {
     if (operation === 1) {
      total = add(firstNum,secondNum);
      a=total;
-     b= 0;
+     b= '';
     } else if (operation === 2) {
      total = subtract(firstNum,secondNum);
      a=total;
-     b=0;
+     b='';
     } else if (operation === 3) {
       total = divide(firstNum,secondNum);
       a=total;
-      b=0;
+      b='';
     } else if (operation === 4) {
       total = multiply(firstNum,secondNum);
       a=total;
-      b=0;
+      b='';
     }
   }
 
