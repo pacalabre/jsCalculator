@@ -23,10 +23,6 @@ $(document).ready(function() {
       b = '1';
       printA();
       toggle++;
-      console.log("beAnz1");
-      console.log("a="+a);
-      console.log("b="+b);
-      console.log("toggle="+toggle);
     // If toggle is equal to 2, value gets assigned to B
     } else if (toggle === 1) {
         // if after you press the equals button, you click another operator to run on the total,
@@ -35,13 +31,9 @@ $(document).ready(function() {
             b = b+"1";
             printB();
             toggle = 2;
-            console.log("beAnz2");
           } else {
         a = a+"1";
         printA();
-        console.log("a="+a);
-        console.log("b="+b);
-        console.log("toggle="+toggle);
       }
     // If toggle is equal to 2, value gets assigned to B
     } else if (toggle === 2) {
@@ -49,35 +41,20 @@ $(document).ready(function() {
       b = b+"1";
       printB();
       toggle = 3;
-      console.log("a="+a);
-      console.log("b="+b);
-      console.log("toggle="+toggle);
-      console.log("timeopclick="+timesOperationButtonClicked);
     // If toggle is equal to 3, var A is equal to the total and the new value goes to B
     } else if (toggle ===3) {
       b=b+'1';
       printB();
-      console.log("a="+a);
-      console.log("b="+b);
-      console.log("toggle="+toggle);
-      console.log("timeopclick="+timesOperationButtonClicked);
     } else if(toggle === 4) {
       a = total;
       b = '';
       b = b+'1';
       printB();
       toggle++;
-      console.log("a="+a);
-      console.log("b="+b);
-      console.log("toggle="+toggle);
-      console.log("timeopclick="+timesOperationButtonClicked);
     }
      else if( toggle === 5) {
       b=b+"1";
       printB();
-      console.log("a="+a);
-      console.log("b="+b);
-      console.log("toggle="+toggle);
     }
     else if (toggle === 6) {
       a = total;
@@ -85,16 +62,10 @@ $(document).ready(function() {
       b = b+'1';
       printB();
       toggle = 5;
-      console.log("a="+a);
-      console.log("b="+b);
-      console.log("toggle="+toggle);
     } else if (toggle > 6) {
       b = b+'1';
       printB();
       toggle = 5;
-      console.log("a="+a);
-      console.log("b="+b);
-      console.log("toggle="+toggle);
     }
   })
 
@@ -107,10 +78,6 @@ $(document).ready(function() {
       b = '2';
       printA();
       toggle++;
-      console.log("beAnz1");
-      console.log("a="+a);
-      console.log("b="+b);
-      console.log("toggle="+toggle);
     // If toggle is equal to 2, value gets assigned to B
     } else if (toggle === 1) {
         // if after you press the equals button, you click another operator to run on the total,
@@ -119,13 +86,9 @@ $(document).ready(function() {
             b = b+"2";
             printB();
             toggle = 2;
-            console.log("beAnz2");
           } else {
         a = a+"2";
         printA();
-        console.log("a="+a);
-        console.log("b="+b);
-        console.log("toggle="+toggle);
       }
     // If toggle is equal to 2, value gets assigned to B
     } else if (toggle === 2) {
@@ -133,35 +96,20 @@ $(document).ready(function() {
       b = b+"2";
       printB();
       toggle = 3;
-      console.log("a="+a);
-      console.log("b="+b);
-      console.log("toggle="+toggle);
-      console.log("timeopclick="+timesOperationButtonClicked);
     // If toggle is equal to 3, var A is equal to the total and the new value goes to B
     } else if (toggle ===3) {
       b=b+'2';
       printB();
-      console.log("a="+a);
-      console.log("b="+b);
-      console.log("toggle="+toggle);
-      console.log("timeopclick="+timesOperationButtonClicked);
     } else if(toggle === 4) {
       a = total;
       b = '';
       b = b+'2';
       printB();
       toggle++;
-      console.log("a="+a);
-      console.log("b="+b);
-      console.log("toggle="+toggle);
-      console.log("timeopclick="+timesOperationButtonClicked);
     }
      else if( toggle === 5) {
       b=b+"2";
       printB();
-      console.log("a="+a);
-      console.log("b="+b);
-      console.log("toggle="+toggle);
     }
     else if (toggle === 6) {
       a = total;
@@ -169,16 +117,10 @@ $(document).ready(function() {
       b = b+'2';
       printB();
       toggle = 5;
-      console.log("a="+a);
-      console.log("b="+b);
-      console.log("toggle="+toggle);
     } else if (toggle > 6) {
       b = b+'2';
       printB();
       toggle = 5;
-      console.log("a="+a);
-      console.log("b="+b);
-      console.log("toggle="+toggle);
     }
   })
 
@@ -191,10 +133,6 @@ $(document).ready(function() {
       b = '3';
       printA();
       toggle++;
-      console.log("beAnz1");
-      console.log("a="+a);
-      console.log("b="+b);
-      console.log("toggle="+toggle);
     // If toggle is equal to 2, value gets assigned to B
     } else if (toggle === 1) {
         // if after you press the equals button, you click another operator to run on the total,
@@ -203,13 +141,10 @@ $(document).ready(function() {
             b = b+"3";
             printB();
             toggle = 2;
-            console.log("beAnz2");
+
           } else {
         a = a+"3";
         printA();
-        console.log("a="+a);
-        console.log("b="+b);
-        console.log("toggle="+toggle);
       }
     // If toggle is equal to 2, value gets assigned to B
     } else if (toggle === 2) {
@@ -217,35 +152,20 @@ $(document).ready(function() {
       b = b+"3";
       printB();
       toggle = 3;
-      console.log("a="+a);
-      console.log("b="+b);
-      console.log("toggle="+toggle);
-      console.log("timeopclick="+timesOperationButtonClicked);
     // If toggle is equal to 3, var A is equal to the total and the new value goes to B
     } else if (toggle ===3) {
       b=b+'3';
       printB();
-      console.log("a="+a);
-      console.log("b="+b);
-      console.log("toggle="+toggle);
-      console.log("timeopclick="+timesOperationButtonClicked);
     } else if(toggle === 4) {
       a = total;
       b = '';
       b = b+'3';
       printB();
       toggle++;
-      console.log("a="+a);
-      console.log("b="+b);
-      console.log("toggle="+toggle);
-      console.log("timeopclick="+timesOperationButtonClicked);
     }
      else if( toggle === 5) {
       b=b+"3";
       printB();
-      console.log("a="+a);
-      console.log("b="+b);
-      console.log("toggle="+toggle);
     }
     else if (toggle === 6) {
       a = total;
@@ -253,16 +173,10 @@ $(document).ready(function() {
       b = b+'3';
       printB();
       toggle = 5;
-      console.log("a="+a);
-      console.log("b="+b);
-      console.log("toggle="+toggle);
     } else if (toggle > 6) {
       b = b+'3';
       printB();
       toggle = 5;
-      console.log("a="+a);
-      console.log("b="+b);
-      console.log("toggle="+toggle);
     }
   })
 
@@ -275,10 +189,6 @@ $(document).ready(function() {
       b = '4';
       printA();
       toggle++;
-      console.log("beAnz1");
-      console.log("a="+a);
-      console.log("b="+b);
-      console.log("toggle="+toggle);
     // If toggle is equal to 2, value gets assigned to B
     } else if (toggle === 1) {
         // if after you press the equals button, you click another operator to run on the total,
@@ -287,13 +197,9 @@ $(document).ready(function() {
             b = b+"4";
             printB();
             toggle = 2;
-            console.log("beAnz2");
           } else {
         a = a+"4";
         printA();
-        console.log("a="+a);
-        console.log("b="+b);
-        console.log("toggle="+toggle);
       }
     // If toggle is equal to 2, value gets assigned to B
     } else if (toggle === 2) {
@@ -301,35 +207,20 @@ $(document).ready(function() {
       b = b+"4";
       printB();
       toggle = 3;
-      console.log("a="+a);
-      console.log("b="+b);
-      console.log("toggle="+toggle);
-      console.log("timeopclick="+timesOperationButtonClicked);
     // If toggle is equal to 3, var A is equal to the total and the new value goes to B
     } else if (toggle ===3) {
       b=b+'4';
       printB();
-      console.log("a="+a);
-      console.log("b="+b);
-      console.log("toggle="+toggle);
-      console.log("timeopclick="+timesOperationButtonClicked);
     } else if(toggle === 4) {
       a = total;
       b = '';
       b = b+'4';
       printB();
       toggle++;
-      console.log("a="+a);
-      console.log("b="+b);
-      console.log("toggle="+toggle);
-      console.log("timeopclick="+timesOperationButtonClicked);
     }
      else if( toggle === 5) {
       b=b+"4";
       printB();
-      console.log("a="+a);
-      console.log("b="+b);
-      console.log("toggle="+toggle);
     }
     else if (toggle === 6) {
       a = total;
@@ -337,16 +228,10 @@ $(document).ready(function() {
       b = b+'4';
       printB();
       toggle = 5;
-      console.log("a="+a);
-      console.log("b="+b);
-      console.log("toggle="+toggle);
     } else if (toggle > 6) {
       b = b+'4';
       printB();
       toggle = 5;
-      console.log("a="+a);
-      console.log("b="+b);
-      console.log("toggle="+toggle);
     }
   })
 
@@ -359,10 +244,6 @@ $(document).ready(function() {
       b = '5';
       printA();
       toggle++;
-      console.log("beAnz1");
-      console.log("a="+a);
-      console.log("b="+b);
-      console.log("toggle="+toggle);
     // If toggle is equal to 2, value gets assigned to B
     } else if (toggle === 1) {
         // if after you press the equals button, you click another operator to run on the total,
@@ -371,13 +252,9 @@ $(document).ready(function() {
             b = b+"5";
             printB();
             toggle = 2;
-            console.log("beAnz2");
           } else {
         a = a+"5";
         printA();
-        console.log("a="+a);
-        console.log("b="+b);
-        console.log("toggle="+toggle);
       }
     // If toggle is equal to 2, value gets assigned to B
     } else if (toggle === 2) {
@@ -385,35 +262,20 @@ $(document).ready(function() {
       b = b+"5";
       printB();
       toggle = 3;
-      console.log("a="+a);
-      console.log("b="+b);
-      console.log("toggle="+toggle);
-      console.log("timeopclick="+timesOperationButtonClicked);
     // If toggle is equal to 3, var A is equal to the total and the new value goes to B
     } else if (toggle ===3) {
       b=b+'5';
       printB();
-      console.log("a="+a);
-      console.log("b="+b);
-      console.log("toggle="+toggle);
-      console.log("timeopclick="+timesOperationButtonClicked);
     } else if(toggle === 4) {
       a = total;
       b = '';
       b = b+'5';
       printB();
       toggle++;
-      console.log("a="+a);
-      console.log("b="+b);
-      console.log("toggle="+toggle);
-      console.log("timeopclick="+timesOperationButtonClicked);
     }
      else if( toggle === 5) {
       b=b+"5";
       printB();
-      console.log("a="+a);
-      console.log("b="+b);
-      console.log("toggle="+toggle);
     }
     else if (toggle === 6) {
       a = total;
@@ -421,16 +283,10 @@ $(document).ready(function() {
       b = b+'5';
       printB();
       toggle = 5;
-      console.log("a="+a);
-      console.log("b="+b);
-      console.log("toggle="+toggle);
     } else if (toggle > 6) {
       b = b+'5';
       printB();
       toggle = 5;
-      console.log("a="+a);
-      console.log("b="+b);
-      console.log("toggle="+toggle);
     }
   })
 
@@ -443,10 +299,6 @@ $(document).ready(function() {
       b = '6';
       printA();
       toggle++;
-      console.log("beAnz1");
-      console.log("a="+a);
-      console.log("b="+b);
-      console.log("toggle="+toggle);
     // If toggle is equal to 2, value gets assigned to B
     } else if (toggle === 1) {
         // if after you press the equals button, you click another operator to run on the total,
@@ -455,13 +307,9 @@ $(document).ready(function() {
             b = b+"6";
             printB();
             toggle = 2;
-            console.log("beAnz2");
           } else {
         a = a+"6";
         printA();
-        console.log("a="+a);
-        console.log("b="+b);
-        console.log("toggle="+toggle);
       }
     // If toggle is equal to 2, value gets assigned to B
     } else if (toggle === 2) {
@@ -469,35 +317,20 @@ $(document).ready(function() {
       b = b+"6";
       printB();
       toggle = 3;
-      console.log("a="+a);
-      console.log("b="+b);
-      console.log("toggle="+toggle);
-      console.log("timeopclick="+timesOperationButtonClicked);
     // If toggle is equal to 3, var A is equal to the total and the new value goes to B
     } else if (toggle ===3) {
       b=b+'6';
       printB();
-      console.log("a="+a);
-      console.log("b="+b);
-      console.log("toggle="+toggle);
-      console.log("timeopclick="+timesOperationButtonClicked);
     } else if(toggle === 4) {
       a = total;
       b = '';
       b = b+'6';
       printB();
       toggle++;
-      console.log("a="+a);
-      console.log("b="+b);
-      console.log("toggle="+toggle);
-      console.log("timeopclick="+timesOperationButtonClicked);
     }
      else if( toggle === 5) {
       b=b+"6";
       printB();
-      console.log("a="+a);
-      console.log("b="+b);
-      console.log("toggle="+toggle);
     }
     else if (toggle === 6) {
       a = total;
@@ -505,16 +338,10 @@ $(document).ready(function() {
       b = b+'6';
       printB();
       toggle = 5;
-      console.log("a="+a);
-      console.log("b="+b);
-      console.log("toggle="+toggle);
     } else if (toggle > 6) {
       b = b+'6';
       printB();
       toggle = 5;
-      console.log("a="+a);
-      console.log("b="+b);
-      console.log("toggle="+toggle);
     }
   })
 
@@ -527,10 +354,6 @@ $(document).ready(function() {
       b = '7';
       printA();
       toggle++;
-      console.log("beAnz1");
-      console.log("a="+a);
-      console.log("b="+b);
-      console.log("toggle="+toggle);
     // If toggle is equal to 2, value gets assigned to B
     } else if (toggle === 1) {
         // if after you press the equals button, you click another operator to run on the total,
@@ -539,13 +362,9 @@ $(document).ready(function() {
             b = b+"7";
             printB();
             toggle = 2;
-            console.log("beAnz2");
           } else {
         a = a+"7";
         printA();
-        console.log("a="+a);
-        console.log("b="+b);
-        console.log("toggle="+toggle);
       }
     // If toggle is equal to 2, value gets assigned to B
     } else if (toggle === 2) {
@@ -553,35 +372,20 @@ $(document).ready(function() {
       b = b+"7";
       printB();
       toggle = 3;
-      console.log("a="+a);
-      console.log("b="+b);
-      console.log("toggle="+toggle);
-      console.log("timeopclick="+timesOperationButtonClicked);
     // If toggle is equal to 3, var A is equal to the total and the new value goes to B
     } else if (toggle ===3) {
       b=b+'7';
       printB();
-      console.log("a="+a);
-      console.log("b="+b);
-      console.log("toggle="+toggle);
-      console.log("timeopclick="+timesOperationButtonClicked);
     } else if(toggle === 4) {
       a = total;
       b = '';
       b = b+'7';
       printB();
       toggle++;
-      console.log("a="+a);
-      console.log("b="+b);
-      console.log("toggle="+toggle);
-      console.log("timeopclick="+timesOperationButtonClicked);
     }
      else if( toggle === 5) {
       b=b+"7";
       printB();
-      console.log("a="+a);
-      console.log("b="+b);
-      console.log("toggle="+toggle);
     }
     else if (toggle === 6) {
       a = total;
@@ -589,16 +393,10 @@ $(document).ready(function() {
       b = b+'7';
       printB();
       toggle = 5;
-      console.log("a="+a);
-      console.log("b="+b);
-      console.log("toggle="+toggle);
     } else if (toggle > 6) {
       b = b+'7';
       printB();
       toggle = 5;
-      console.log("a="+a);
-      console.log("b="+b);
-      console.log("toggle="+toggle);
     }
   })
 
@@ -611,10 +409,6 @@ $(document).ready(function() {
       b = '8';
       printA();
       toggle++;
-      console.log("beAnz1");
-      console.log("a="+a);
-      console.log("b="+b);
-      console.log("toggle="+toggle);
     // If toggle is equal to 2, value gets assigned to B
     } else if (toggle === 1) {
         // if after you press the equals button, you click another operator to run on the total,
@@ -623,13 +417,9 @@ $(document).ready(function() {
             b = b+"8";
             printB();
             toggle = 2;
-            console.log("beAnz2");
           } else {
         a = a+"8";
         printA();
-        console.log("a="+a);
-        console.log("b="+b);
-        console.log("toggle="+toggle);
       }
     // If toggle is equal to 2, value gets assigned to B
     } else if (toggle === 2) {
@@ -637,35 +427,20 @@ $(document).ready(function() {
       b = b+"8";
       printB();
       toggle = 3;
-      console.log("a="+a);
-      console.log("b="+b);
-      console.log("toggle="+toggle);
-      console.log("timeopclick="+timesOperationButtonClicked);
     // If toggle is equal to 3, var A is equal to the total and the new value goes to B
     } else if (toggle ===3) {
       b=b+'8';
       printB();
-      console.log("a="+a);
-      console.log("b="+b);
-      console.log("toggle="+toggle);
-      console.log("timeopclick="+timesOperationButtonClicked);
     } else if(toggle === 4) {
       a = total;
       b = '';
       b = b+'8';
       printB();
       toggle++;
-      console.log("a="+a);
-      console.log("b="+b);
-      console.log("toggle="+toggle);
-      console.log("timeopclick="+timesOperationButtonClicked);
     }
      else if( toggle === 5) {
       b=b+"8";
       printB();
-      console.log("a="+a);
-      console.log("b="+b);
-      console.log("toggle="+toggle);
     }
     else if (toggle === 6) {
       a = total;
@@ -673,16 +448,10 @@ $(document).ready(function() {
       b = b+'8';
       printB();
       toggle = 5;
-      console.log("a="+a);
-      console.log("b="+b);
-      console.log("toggle="+toggle);
     } else if (toggle > 6) {
       b = b+'8';
       printB();
       toggle = 5;
-      console.log("a="+a);
-      console.log("b="+b);
-      console.log("toggle="+toggle);
     }
   })
 
@@ -695,10 +464,6 @@ $(document).ready(function() {
       b = '9';
       printA();
       toggle++;
-      console.log("beAnz1");
-      console.log("a="+a);
-      console.log("b="+b);
-      console.log("toggle="+toggle);
     // If toggle is equal to 2, value gets assigned to B
     } else if (toggle === 1) {
         // if after you press the equals button, you click another operator to run on the total,
@@ -707,13 +472,9 @@ $(document).ready(function() {
             b = b+"9";
             printB();
             toggle = 2;
-            console.log("beAnz2");
           } else {
         a = a+"9";
         printA();
-        console.log("a="+a);
-        console.log("b="+b);
-        console.log("toggle="+toggle);
       }
     // If toggle is equal to 2, value gets assigned to B
     } else if (toggle === 2) {
@@ -721,35 +482,20 @@ $(document).ready(function() {
       b = b+"9";
       printB();
       toggle = 3;
-      console.log("a="+a);
-      console.log("b="+b);
-      console.log("toggle="+toggle);
-      console.log("timeopclick="+timesOperationButtonClicked);
     // If toggle is equal to 3, var A is equal to the total and the new value goes to B
     } else if (toggle ===3) {
       b=b+'9';
       printB();
-      console.log("a="+a);
-      console.log("b="+b);
-      console.log("toggle="+toggle);
-      console.log("timeopclick="+timesOperationButtonClicked);
     } else if(toggle === 4) {
       a = total;
       b = '';
       b = b+'9';
       printB();
       toggle++;
-      console.log("a="+a);
-      console.log("b="+b);
-      console.log("toggle="+toggle);
-      console.log("timeopclick="+timesOperationButtonClicked);
     }
      else if( toggle === 5) {
       b=b+"9";
       printB();
-      console.log("a="+a);
-      console.log("b="+b);
-      console.log("toggle="+toggle);
     }
     else if (toggle === 6) {
       a = total;
@@ -757,16 +503,10 @@ $(document).ready(function() {
       b = b+'9';
       printB();
       toggle = 5;
-      console.log("a="+a);
-      console.log("b="+b);
-      console.log("toggle="+toggle);
     } else if (toggle > 6) {
       b = b+'9';
       printB();
       toggle = 5;
-      console.log("a="+a);
-      console.log("b="+b);
-      console.log("toggle="+toggle);
     }
   })
 
@@ -779,10 +519,6 @@ $(document).ready(function() {
       b = '0';
       printA();
       toggle++;
-      console.log("beAnz1");
-      console.log("a="+a);
-      console.log("b="+b);
-      console.log("toggle="+toggle);
     // If toggle is equal to 2, value gets assigned to B
     } else if (toggle === 1) {
         // if after you press the equals button, you click another operator to run on the total,
@@ -791,13 +527,9 @@ $(document).ready(function() {
             b = b+"0";
             printB();
             toggle = 2;
-            console.log("beAnz2");
           } else {
         a = a+"0";
         printA();
-        console.log("a="+a);
-        console.log("b="+b);
-        console.log("toggle="+toggle);
       }
     // If toggle is equal to 2, value gets assigned to B
     } else if (toggle === 2) {
@@ -805,35 +537,20 @@ $(document).ready(function() {
       b = b+"0";
       printB();
       toggle = 3;
-      console.log("a="+a);
-      console.log("b="+b);
-      console.log("toggle="+toggle);
-      console.log("timeopclick="+timesOperationButtonClicked);
     // If toggle is equal to 3, var A is equal to the total and the new value goes to B
     } else if (toggle ===3) {
       b=b+'0';
       printB();
-      console.log("a="+a);
-      console.log("b="+b);
-      console.log("toggle="+toggle);
-      console.log("timeopclick="+timesOperationButtonClicked);
     } else if(toggle === 4) {
       a = total;
       b = '';
       b = b+'0';
       printB();
       toggle++;
-      console.log("a="+a);
-      console.log("b="+b);
-      console.log("toggle="+toggle);
-      console.log("timeopclick="+timesOperationButtonClicked);
     }
      else if( toggle === 5) {
       b=b+"0";
       printB();
-      console.log("a="+a);
-      console.log("b="+b);
-      console.log("toggle="+toggle);
     }
     else if (toggle === 6) {
       a = total;
@@ -841,16 +558,10 @@ $(document).ready(function() {
       b = b+'0';
       printB();
       toggle = 5;
-      console.log("a="+a);
-      console.log("b="+b);
-      console.log("toggle="+toggle);
     } else if (toggle > 6) {
       b = b+'0';
       printB();
       toggle = 5;
-      console.log("a="+a);
-      console.log("b="+b);
-      console.log("toggle="+toggle);
     }
   })
 
@@ -899,15 +610,7 @@ $(document).ready(function() {
 
   //if equals sign is pressed, run selected operator
   $('#equals').mousedown(function() {
-
-    console.log("a= " + a);
-    console.log('total='+total)
     equals();
-    console.log("timesOperationButtonClicked = "+timesOperationButtonClicked);
-    console.log("a= " + a);
--   console.log("b= "+ b);
--   console.log("toggle= "+ toggle);
--   console.log("total= "+total);
     a = total;
     b= 0;
     timesOperationButtonClicked = 0;
@@ -931,7 +634,6 @@ $(document).ready(function() {
   }
 
   function equals() {
-    console.log("a is equal to"+a);
     var firstNum = parseFloat(a);
     var secondNum = parseFloat(b);
 
@@ -952,10 +654,6 @@ $(document).ready(function() {
       a=total;
       b=0;
     }
-    console.log("a= " + a);
--   console.log("b= "+ b);
--   console.log("toggle= "+ toggle);
--   console.log("total= "+total);
   }
 
   function clear() {
