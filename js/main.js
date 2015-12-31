@@ -28,7 +28,7 @@ $(document).ready(function() {
         // if after you press the equals button, you click another operator to run on the total,
         // if not toggle defaults to A and will start a new equation
         if(timesOperationButtonClicked === 1 ) {
-            b = b+"1";
+            b = "1";
             printB();
             toggle = 2;
           } else {
@@ -83,7 +83,7 @@ $(document).ready(function() {
         // if after you press the equals button, you click another operator to run on the total,
         // if not toggle defaults to A and will start a new equation
         if(timesOperationButtonClicked === 1 ) {
-            b = b+"2";
+            b = "2";
             printB();
             toggle = 2;
           } else {
@@ -138,7 +138,7 @@ $(document).ready(function() {
         // if after you press the equals button, you click another operator to run on the total,
         // if not toggle defaults to A and will start a new equation
         if(timesOperationButtonClicked === 1 ) {
-            b = b+"3";
+            b = "3";
             printB();
             toggle = 2;
 
@@ -194,7 +194,7 @@ $(document).ready(function() {
         // if after you press the equals button, you click another operator to run on the total,
         // if not toggle defaults to A and will start a new equation
         if(timesOperationButtonClicked === 1 ) {
-            b = b+"4";
+            b = "4";
             printB();
             toggle = 2;
           } else {
@@ -249,7 +249,7 @@ $(document).ready(function() {
         // if after you press the equals button, you click another operator to run on the total,
         // if not toggle defaults to A and will start a new equation
         if(timesOperationButtonClicked === 1 ) {
-            b = b+"5";
+            b = "5";
             printB();
             toggle = 2;
           } else {
@@ -304,7 +304,7 @@ $(document).ready(function() {
         // if after you press the equals button, you click another operator to run on the total,
         // if not toggle defaults to A and will start a new equation
         if(timesOperationButtonClicked === 1 ) {
-            b = b+"6";
+            b = "6";
             printB();
             toggle = 2;
           } else {
@@ -359,7 +359,7 @@ $(document).ready(function() {
         // if after you press the equals button, you click another operator to run on the total,
         // if not toggle defaults to A and will start a new equation
         if(timesOperationButtonClicked === 1 ) {
-            b = b+"7";
+            b = "7";
             printB();
             toggle = 2;
           } else {
@@ -414,7 +414,7 @@ $(document).ready(function() {
         // if after you press the equals button, you click another operator to run on the total,
         // if not toggle defaults to A and will start a new equation
         if(timesOperationButtonClicked === 1 ) {
-            b = b+"8";
+            b = "8";
             printB();
             toggle = 2;
           } else {
@@ -469,7 +469,7 @@ $(document).ready(function() {
         // if after you press the equals button, you click another operator to run on the total,
         // if not toggle defaults to A and will start a new equation
         if(timesOperationButtonClicked === 1 ) {
-            b = b+"9";
+            b = "9";
             printB();
             toggle = 2;
           } else {
@@ -524,7 +524,7 @@ $(document).ready(function() {
         // if after you press the equals button, you click another operator to run on the total,
         // if not toggle defaults to A and will start a new equation
         if(timesOperationButtonClicked === 1 ) {
-            b = b+"0";
+            b = "0";
             printB();
             toggle = 2;
           } else {
